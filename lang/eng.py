@@ -19,32 +19,37 @@ HOME = {
 
 "يمكن لهذا البوت تحويل الصور الPDF وكذلك تعديل علىPDF من قص ودمج وضغط وتشفير ودمج سلادين وغيرها…\n\n"  
 "لمعرفة المزيد من خصائص البوت إضغط **⚠️ المساعدة ⚠️**",
-    "HomeACB": {
-        "⚙️ الإعدادات ⚙️": "Home|B" , "⚠️ مساعدة ⚠️": "Home|C",
-        "📢 القناة 📢": f"{str(settings.OWNED_CHANNEL)}",
-        " 🌟تقييم 🌟": f"{str(settings.SOURCE_CODE)}",
-        "🚶 اغلق 🚶": "close|mee"
-    } ,
-    "HomeAdminCB": {
-        "⚙️ الإعدادات ⚙️": "Home|B" , "⚠️ مساعدة ⚠️": "Home|C",
-        "📢 القناة 📢": f"{str(settings.OWNED_CHANNEL)}",
-        "🌟تقييم 🌟": f"{str(settings.SOURCE_CODE)}",
-        "🗽 الحالة 🗽": "status|home", "🚶 قريب 🚶": "close|mee"
-    } ,
+       "HomeACB" : {
+        "⚙️ الاعدادات ⚙️" : "Home|B",
+        "🌍 اللغة 🌍" : "set|lang",
+        "⚠️ النساعدة ⚠️" : "Home|C",
+        "📢 قناة 📢" : f"{str(settings.OWNED_CHANNEL)}",
+        "🌟 تقييم 🌟" : f"{str(settings.SOURCE_CODE)}",
+        "➕ أضف الى كروب ➕" : "https://t.me/{}?startgroup=True"
+    },
+    "HomeAdminCB" : {
+        "⚙️ الاعدادات ⚙️" : "Home|B",
+        "🌍 اللغة 🌍" : "set|lang",
+        "⚠️ المصاعدة ⚠️" : "Home|C",
+        "📢 القناة 📢" : f"{str(settings.OWNED_CHANNEL)}",
+        "🌟 تقييم🌟" : f"{str(settings.SOURCE_CODE)}",
+        "🗽 الحالة 🗽" : f"status|home",
+        "➕  أضف الى كروب ➕" : "https://t.me/{}?startgroup=True",
+        "🚶 أغلق 🚶" : "close|mee"
+    },
     "HomeB" : """صفحة الإعدادات⚙️
 
-اسم المستخدم   : {}
-معرف المستخدم           : {}
-اسم مستخدم    : {}
-تاريخ الانضمام      : {}
-
-لغة    : {}
-API                    : {}
-واجهة            : {}
-تعليق         : {}
-اسم الملف      : {}""",
+اسم المستخدم: {}
+معرف المستخدم:{}
+اسم مستخدم  : {}
+تاريخ الانضمام:{}
+لغة المستخدم: {}
+API مفاتيح  : {}
+الواجهة ملف : {}
+تعليق  ملف  : {}
+الاسم ملف    : {}""",
     "HomeBCB" : {
-        "📍 واجهك 📍" : "set|thumb",
+        "📍 واجهتك 📍" : "set|thumb",
         "📈 الاسم 📈" : "set|fname",
         "💩 API 💩" : "set|api",
         "📅 تعليق 📅" : "set|capt",
@@ -59,7 +64,7 @@ API                    : {}
  ◍ PDF⥃ الصور [الكل , النطاق , الصفحات] \n ◍ المستندات إلى PDF [png , jpg , jpeg] \n ◍ الصور PDF \n ◍ بيانات PDF الوصفية \n ◍ PDF⥃TEXT \n ◍ TEXT⥃PDF \n ◍ ضغط ملف pdf
  ◍ انقسام PDF [النطاق , الصفحات] \n ◍ دمج PDF \n ◍ إضافة طابع \n ◍ إعادة تسمية PDF \n ◍ تدوير PDF \n ◍ ENCRYPT / DECRYPT PDF \n ◍ PDF FORMATTER \n ◍ PDF⥃JSON / TXT FILE
  ◍ PDF⥃HTML [عرض الويب] \n ◍ URL⥃PDF \n ◍ PDF⥃ZIP / TAR / RAR [الكل , النطاق , الصفحات] \n وأكثر من ذلك بكثير .. """ ,
-    "HomeCCB": {"« BACK HOME «": "Home|A", "🛈 INSTRUCTIONS 🛈": "Home|D"},
+    "HomeCCB": {"« العودة«": "Home|A", "🛈 تعليمات 🛈": "Home|D"},
     "HomeD": """` نظرًا لأن هذه خدمة مجانية , لا يمكنني ضمان المدة التي يمكنني خلالها الحفاظ على هذه الخدمة ..`😝
  
 ⚠️ تعليمات ⚠️:
@@ -608,43 +613,43 @@ URL = {
 
 ERROR: `{}`
 
-NB: In Groups, Bots Can Only fetch documents Send After Joining Group =)""",
-    "done" : "```Almost Done.. ✅\nNow, Started Uploading.. 📤```",
-    "_error_" : "send me any url or direct telegram pdf links",
-    "openCB" : {"Open In Browser" : "{}"},
-    "_error" : "`Some Thing Went Wrong =(`\n\n`{}`",
-    "_get" : """[Open Chat]({})
+Ta: في المجموعات، يمكن للبوتات إحضار المستندات التي يتم إرسالها فقط بعد الانضمام إلى المجموعة =)""",
+    "done" : "```أوشكت على الانتهاء.. ✅\nالآن، بدأت التحميل.. 📤```",
+    "_error_" : "أرسل لي أي عنوان url أو روابط برقية مباشرة بتنسيق pdf",
+    "openCB" : {"فتح رابطك" : "{}"},
+    "_error" : "`حدث خطأ ما =(`\n\n`{}`",
+    "_get" : """[فتح الجات]({})
 
-**ABOUT CHAT ↓**
-Chat Type   : {}
-Chat Name : {}
-Chat Usr    : @{}
-Chat ID        : {}
-Date : {}
+**حول الجات ↓**
+نوع الجات   : {}
+اسم جات : {}
+يوزر جات: @{}
+ايدي جات      : {}
+الوقت : {}
 
-**ABOUT MEDIA ↓**
-Media       : {}
-File Name : {}
-File Size   : {}
-File Type : {}"""
+**حول ميديا ↓**
+ميديا       : {}
+اسم ملف : {}
+حجم ملف  : {}
+نوع ملف: {}"""
 }
 
 getFILE = {
-    "wait" : "Wait.. Let me.. 😜",
+    "wait" : "انتظر.. دعني.. 😜",
     "inWork" : PROGRESS['workInP'],
-    "big" : "Send PDF url less than {}mb",
-    "dl" : {"📥 ..DOWNLOADING.. 📥" : "nabilanavab"},
-    "up" : {"📤 ..UPLOADING..  📤" : "nabilanavab"},
-    "complete" : {"😎 COMPLETED 😎" : f"{str(settings.SOURCE_CODE)}"}
+    "big" : "أرسل عنوان url PDF أقل من {}MB",
+    "dl" : {"📥 ..تنزيل.. 📥" : "nabilanavab"},
+    "up" : {"📤 ..تحميل..  📤" : "nabilanavab"},
+    "complete" : {"😎 اكتمل 😎" : f"{str(settings.SOURCE_CODE)}"}
 }
 
 cbAns = [
-    "This feature is Under Development ⛷️",
-    "Error annenn paranjille.. then what.. 😏",
-    "Process Canceled.. 😏",
-    "File Not Encrypted.. 👀",
-    "Nothing Official About it.. 😅",
-    "🎉 Completed.. 🏃"
+    "هذه الميزة قيد التطوير ⛷️",
+    "خطأ آن بارانجيل.. ثم ماذا.. 😏",
+    "تم إلغاء العملية.. 😏",
+    "الملف غير مشفر.. 👀",
+    "لا شيء رسمي عن ذلك.. 😅",
+    "🎉 اكتمل.. 🏃"
 ]
 
 wa = {
@@ -654,19 +659,19 @@ wa = {
     "inWork" : PROGRESS['workInP'],
     "process" : document['process'],
     "download" : PROGRESS['dlFile'],
-    "error" : "Something went Wrong 🙂",
-    "cancelCB" : {"⟨ Cancel ⟩" : "close|me"},
-    "add" : "Adding watermark to PDF File 💩",
-    "waDL" : "__Getting watermark File..__ 🙄",
+    "error" : "حدث خطأ ما 🙂",
+    "cancelCB" : {"⟨ الالغاء ⟩" : "close|me"},
+    "add" : "إضافة علامة مائية إلى ملف PDF 💩",
+    "waDL" : "__الحصول على ملف العلامة المائية..__ 🙄",
     "type" : {
-        "⚙️ PDF » WATERMARK ↓" : "nabilanavab",
-        "TEXT" : "pdf|wa|txt",
-        "IMAGE" : "pdf|wa|img",
+        "⚙️ PDF » عَلامة مائيّة ↓" : "nabilanavab",
+        "نص" : "pdf|wa|txt",
+        "صورة" : "pdf|wa|img",
         "PDF" : "pdf|wa|pdf",
-        "« BACK «" : "pdf2"
+        "« عودة «" : "pdf2"
     },
     "op" : {
-        "⚙️ PDF » WATERMARK » {} » OPCACiTY ↓" : "nabilanavab",
+        "⚙️ PDF » عَلامة مائيّة » {} » OPCACiTY ↓" : "nabilanavab",
         "10 %":"pdf|wa|{}|o01",
         "20 %":"pdf|wa|{}|o02",
         "30 %":"pdf|wa|{}|o03",
@@ -677,10 +682,10 @@ wa = {
         "80 %":"pdf|wa|{}|o08",
         "90 %":"pdf|wa|{}|o09",
         "100 %":"pdf|wa|{}|o10",
-        "« BACK «" : "pdf|wa"
+        "« عودة «" : "pdf|wa"
     },
     "po" : {
-        "⚙️ PDF » WATERMARK » POSiTiON ↓" : "nabilanavab",
+        "⚙️ PDF » عَلامة مائيّة » POSiTiON ↓" : "nabilanavab",
         "᠎᠎᠎ " : "wa|{0}|{1}|TL",
         "᠎᠎   " : "wa|{0}|{1}|TM",
         "᠎᠎ " : "wa|{0}|{1}|TR",
@@ -690,18 +695,18 @@ wa = {
         "᠎᠎ " : "wa|{0}|{1}|BL",
         "᠎ ᠎ " : "wa|{0}|{1}|BM",
         "᠎  ᠎ " : "wa|{0}|{1}|BR",
-        "« BACK «" : "pdf|wa|{0}"
+        "« عودة «" : "pdf|wa|{0}"
     }, 
-    "txt" : """__Now, Send me any Text Message__
+    "txt" : """__الآن، أرسل لي أي رسالة نصية__
 
-/exit : to cancel""", 
-    "pdf" : """__Send me the watermark pdf.__
+/exit : للإلغاء""", 
+    "pdf" : """__أرسل لي العلامة المائية pdf.__
 
-/exit : to cancel""",
-    "img" : """__Send me the watermark Image as file.__
-__ Supported Files [png, jpeg, jpg]__
+/exit : للإلغاء""",
+    "img" : """__أرسل لي صورة العلامة المائية كملف.__
+__ ملفات مدعة [png, jpeg, jpg]__
 
-/exit : to cancel""",
+/exit : للإلغاء""",
 }
 
 comb = {
@@ -710,52 +715,52 @@ comb = {
     "process" : document['process'],
     "process" : document['process'],
     "download" : PROGRESS['dlFile'],
-    "cancelCB" : {"⟨ Cancel ⟩" : "close|me"},
+    "cancelCB" : {"⟨ للإلغاء ⟩" : "close|me"},
 }
 
 inline_query = {
-    "capt" : "SET LANGUAGE ⚙️",
-    "des" : "By: @nabilanavab ❤",
-    "TOP" : { "Now, Select Language ⮷" : "nabilanavab" },
+    "capt" : "تعيين اللغة ⚙️",
+    "des" : "By: @ta_ja199 ❤",
+    "TOP" : { "الآن، اختر اللغة ⮷" : "nabilanavab" },
 }
 
 LINK = {
-    "gen" : "`🔗 Generating..`",
-    "_gen" : """```🔗 Generating..
-We're working on it!
+    "gen" : "`🔗 توليد..`",
+    "_gen" : """```🔗 توليد..
+نحن نعمل على ذلك!
 
-Please allow a moment for the processing to complete.```""",
-    "no" : "Unfortunately, we encountered an error 😓",
-    "type" : """`🔗 Generating..`
+يرجى إتاحة لحظة حتى تكتمل المعالجة.```""",
+    "no" : "لسوء الحظ، واجهنا خطأ 😓",
+    "type" : """`🔗 توليد..`
 
-**Public** 📢:
-__The file accessed via this link will be publicly available, allowing anyone to save and forward it__.
+**عام** 📢:
+__سيكون الملف الذي يمكن الوصول إليه عبر هذا الرابط متاحا للجمهور، مما يسمح لأي شخص بحفظه وإعادة توجيهه__.
 
 
-**Protect** 🔐:
-__Ensures the confidentiality of the message by preventing its forwarding and saving__.""",
-    "notify" : "Get Notify when a someone fetch this pdf",
+**محمي** 🔐:
+__يضمن سرية الرسالة عن طريق منع إعادة توجيهها وحفظها__.""",
+    "notify" : "احصل على إخطار عندما يجلب شخص ما ملف pdf هذا",
     "notify_pvt" : {
-        "🔔 NOTIFY 🔔" : "link-pvt-ntf",
-        "🔕 MUTE 🔕" : "link-pvt-mut"
+        "🔔 اشعار 🔔" : "link-pvt-ntf",
+        "🔕 صامت 🔕" : "link-pvt-mut"
     },
     "notify_pub" : {
-        "🔔 NOTIFY 🔔" : "link-pbc-ntf",
-        "🔕 MUTE 🔕" : "link-pbc-mut"
+        "🔔 اشعار 🔔" : "link-pbc-ntf",
+        "🔕 صامت 🔕" : "link-pbc-mut"
     },
     "typeBTN" : {
-        "📢 PUBLIC 📢" : "link-pub",
-        "🔐 PRIVATE 🔐" : "link-pvt"
+        "📢 عام 📢" : "link-pub",
+        "🔐 خاص 🔐" : "link-pvt"
     },
-    "link" : "**Here it is! This is what you were searching for..**",
-    "error" : "Oops, it looks like something went wrong. Please try again later.\n\n`ERROR:` {}"
+    "link" : "**ها هو! هذا ما كنت تبحث عنه..**",
+    "error" : "عفوا، يبدو أن هناك خطأ ما حدث. من فضلك حاول مرة أخرى لاحقا.\n\n`خطا:` {}"
 }
 
 DELETE = {
     "button" : {
-        "⚙️ PDF » SPLIT ↓" : "nabilanavab",
-        "With In Range 🦞" : "split|dR",
-        "Single Page 🐛" : "split|dS",
-        "« BACK «" : "pdf1"
+        "⚙️ PDF » تقسيم ↓" : "nabilanavab",
+        "بنطاق🦞" : "split|dR",
+        "صفحات منقصلة🐛" : "split|dS",
+        "« عودة «" : "pdf1"
     },
 }
