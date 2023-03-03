@@ -6,240 +6,197 @@ from configs.config   import settings
 
 # REPLY MESSAGE FOR BROKEN WORKS
 RESTART = {
-    "msg" : """☠ `𝐎𝐕𝐄𝐑𝐋𝐎𝐀𝐃 𝐃𝐄𝐂𝐓𝐄𝐂𝐓𝐄𝐃`☠:\n__pǝʇɹɐʇsǝɹ ɹǝʌɹǝs__ \n
-I noticed that your work was also in queue
-
-Can you please try again..!""",
-    "btn" : { "🚶 CLOSE 🚶" : "close|mee" }
+    "msg" : """☠ `𝐎𝐕𝐄𝐑𝐋𝐎𝐀𝐃 𝐃𝐄𝐂𝐓𝐄𝐂𝐓𝐄𝐃`☠:\n__تحديث الخادم__ \n
+لاحظت أن عملك كان أيضا في قائمة الانتظار
+هل يمكنك المحاولة مرة أخرى من فضلك..!""",
+    "btn" : { "🚶 أغلق 🚶" : "close|mee" }
 }
 
 # PM WELCOME MESSAGE (HOME A, B, C, D...)
 HOME = {
-    "HomeA" : "Hey {}..!!\n"
-"Welcome to {}.!\n\n"
+    "HomeA" : "مرحبا بك {}..!!\n"
+"في بوت {}.!\n\n"
 
-"With this tool, you can easily convert images to PDF, compress PDF files, split , merge, encrypt or decrypt PDFs, rotate PDF pages, and much more.\n\n"
+"يمكن لهذا البوت تحويل الصور الPDF وكذلك تعديل علىPDF من قص ودمج وضغط وتشفير ودمج سلادين وغيرها…\n\n"  
+"لمعرفة المزيد من خصائص البوت إضغط **⚠️ المساعدة ⚠️**",
+    "HomeACB": {
+        "⚙️ الإعدادات ⚙️": "Home|B" , "⚠️ مساعدة ⚠️": "Home|C",
+        "📢 القناة 📢": f"{str(settings.OWNED_CHANNEL)}",
+        " 🌟تقييم 🌟": f"{str(settings.SOURCE_CODE)}",
+        "🚶 اغلق 🚶": "close|mee"
+    } ,
+    "HomeAdminCB": {
+        "⚙️ الإعدادات ⚙️": "Home|B" , "⚠️ مساعدة ⚠️": "Home|C",
+        "📢 القناة 📢": f"{str(settings.OWNED_CHANNEL)}",
+        "🌟تقييم 🌟": f"{str(settings.SOURCE_CODE)}",
+        "🗽 الحالة 🗽": "status|home", "🚶 قريب 🚶": "close|mee"
+    } ,
+    "HomeB" : """صفحة الإعدادات⚙️
 
+اسم المستخدم   : {}
+معرف المستخدم           : {}
+اسم مستخدم    : {}
+تاريخ الانضمام      : {}
 
-
-
-
-
-"Simply send me a PDF/IMAGE and it will perform the requested action. for help select '⚠️ HELP ⚠️' at any time.the PDF bot is here to make your life easier..\n\n"
-
-
-"Try it out now and see how it can help you with all of your PDF needs!",
-    "HomeACB" : {
-        "⚙️ SETTINGS ⚙️" : "Home|B",
-        "🌍 LANGUAGE 🌍" : "set|lang",
-        "⚠️ HELP ⚠️" : "Home|C",
-        "📢 CHANNEL 📢" : f"{str(settings.OWNED_CHANNEL)}",
-        "🌟 SOURCE CODE 🌟" : f"{str(settings.SOURCE_CODE)}",
-        "➕ ADD IN GROUP ➕" : "https://t.me/{}?startgroup=True"
-    },
-    "HomeAdminCB" : {
-        "⚙️ SETTINGS ⚙️" : "Home|B",
-        "🌍 LANGUAGE 🌍" : "set|lang",
-        "⚠️ HELP ⚠️" : "Home|C",
-        "📢 CHANNEL 📢" : f"{str(settings.OWNED_CHANNEL)}",
-        "🌟 SOURCE CODE 🌟" : f"{str(settings.SOURCE_CODE)}",
-        "🗽 STATUS 🗽" : f"status|home",
-        "➕ ADD IN GROUP ➕" : "https://t.me/{}?startgroup=True",
-        "🚶 CLOSE 🚶" : "close|mee"
-    },
-    "HomeB" : """SETTINGS PAGE ⚙️
-
-USER NAME   : {}
-USER ID           : {}
-USERNAME    : {}
-JOIN DATE      : {}
-
-LANGUAGE    : {}
+لغة    : {}
 API                    : {}
-THUMB            : {}
-CAPTION         : {}
-FILE NAME      : {}""",
+واجهة            : {}
+تعليق         : {}
+اسم الملف      : {}""",
     "HomeBCB" : {
-        "📍 THUMB 📍" : "set|thumb",
-        "📈 NAME 📈" : "set|fname",
+        "📍 واجهك 📍" : "set|thumb",
+        "📈 الاسم 📈" : "set|fname",
         "💩 API 💩" : "set|api",
-        "📅 CAPTION 📅" : "set|capt",
-        "« BACK TO HOME «" : "Home|B2A"
+        "📅 تعليق 📅" : "set|capt",
+        "« العودة الرئيسية «" : "Home|B2A"
     },
-    "HomeC" : """**Some of the main features are:**
+    "HomeC": """🪂 ** رسالة مساعدة **:
+
+``` بعض الميزات الرئيسية هي:
+ ◍ تحويل الصور إلى PDF \n ◍ Manupultions PDF \n ◍ العديد من برامج الترميز الشائعة إلى pdf
  
- ◍ ```Create a PDF from your images: simply send it in bot pms [png, jpg, jpeg]```
- ◍ ```Extract the text from the PDF: Helps to extract the text from the PDF file and send as separate message.```
- ◍ ```Convert the PDF to another file format: [images, txt, html, json, tar, rar]```
- ◍ ```Merge multiple PDFs into one: Multiple PDF files to combine into a single file```
- ◍ ```Split a PDF into separate pages: Large PDF file to split it into separate ones```
- ◍ ```Extract images from the PDF: [all,range,pages] as image, doc, zip, rar```
- ◍ ```Helps to reduce size by optimizing the images. Useful in sending file via email when it's too large```
- ◍ ```Fetches Metadata: title of the document, the author, the subject, the keywords associated with the document, and the creation and modification dates```
- ◍ ```Encrypt/Decrypt Pdfs Using passwords, Websites to Pdf, Rotate, Rename, stamb..```
- ◍ ```WaterMark, Combine, Zoom, Draw, Add/Delete pages, Ocr pdf..```
- ◍ ```text messages to pdf files, and Much More.. 😎```""",
-    "HomeCCB" : {
-        "« BACK HOME «" : "Home|A",
-        "🛈 INSTRUCTIONS 🛈" : "Home|D"
-    },
-    "HomeD" : """`As you know, this is a free service, I cannot guarantee how long I can maintain this service..`😝
+تعديل ملف pdf:
+ ◍ PDF⥃ الصور [الكل , النطاق , الصفحات] \n ◍ المستندات إلى PDF [png , jpg , jpeg] \n ◍ الصور PDF \n ◍ بيانات PDF الوصفية \n ◍ PDF⥃TEXT \n ◍ TEXT⥃PDF \n ◍ ضغط ملف pdf
+ ◍ انقسام PDF [النطاق , الصفحات] \n ◍ دمج PDF \n ◍ إضافة طابع \n ◍ إعادة تسمية PDF \n ◍ تدوير PDF \n ◍ ENCRYPT / DECRYPT PDF \n ◍ PDF FORMATTER \n ◍ PDF⥃JSON / TXT FILE
+ ◍ PDF⥃HTML [عرض الويب] \n ◍ URL⥃PDF \n ◍ PDF⥃ZIP / TAR / RAR [الكل , النطاق , الصفحات] \n وأكثر من ذلك بكثير .. """ ,
+    "HomeCCB": {"« BACK HOME «": "Home|A", "🛈 INSTRUCTIONS 🛈": "Home|D"},
+    "HomeD": """` نظرًا لأن هذه خدمة مجانية , لا يمكنني ضمان المدة التي يمكنني خلالها الحفاظ على هذه الخدمة ..`😝
  
-⚠️ INSTRUCTIONS ⚠️:
- ◍ ```Please note that spamming is generally not tolerated and can result in the user or bot being banned from the service```
- ◍ ```Wait for the bot to process the file: The bot will process the PDF file and perform the requested action. This may take a few minutes, depending on the size of the file and the complexity of the action being performed.```
- ◍ ```Once the bot has completed the action, it will send you the results. If the action was successful, you will receive the output. If the action was not successful, the bot will let you know and provide any relevant error messages.```
- ◍ ```Any user found to be distributing or sharing pornographic content on the bot will be permanently banned```
-**Send any image to start:** 😁""",
-    "HomeDCB" : {
-        "⚠️ HELP ⚠️" : "Home|C",
-        "» BACK HOME »" : "Home|A"
-    }  
+⚠️ تعليمات ⚠️:
+🛈 __يرجى عدم محاولة إساءة استخدام إدارة Bot__ 😒
+🛈 __لا ترسل بريدًا عشوائيًا هنا , فقد يؤدي ذلك إلى حظر دائم 🎲__.
+🛈 __محتويات الاباحيه ايضا ستمنحك حظر دائم 💯__
+
+** أرسل أي صورة لتبدأ: ** 😁 """,
+    "HomeDCB": {"⚠️ مساعدة ⚠️": "Home|C", "» عودة للرئيسية »": "Home|A"}
 }
 
 # GROUP WELCOME MESSAGE
 HomeG = {
     "HomeA" : HOME['HomeA'],
     "HomeACB" : {
-        "🌍 LANGUAGE 🌍" : "set|lang",
-        "🛡️ HELP 🛡️": "Home|C",
-        "📢 CHANNEL 📢" : f"{str(settings.OWNED_CHANNEL)}",
-        "🌟 SOURCE CODE 🌟": f"{settings.SOURCE_CODE}",
-        "🚶 CLOSE 🚶" : "close|mee",
+        "🌍 اللغة 🌍" : "set|lang",
+        "🛡️ المساعدة 🛡️": "Home|C",
+        "📢 القناة 📢" : f"{str(settings.OWNED_CHANNEL)}",
+        "🌟 التقييم 🌟": f"{settings.SOURCE_CODE}",
+        "🚶 اغلق 🚶" : "close|mee",
     }
 }
 
 SETTINGS = {
-    "lang" : "Now, Select any language..",
-    "default" : ["DEFAULT ❌", "CUSTOM ✅"],
-    "cant" : "This feature cannot be used ❌",
-    "wait" : { "Waiting.. 🥱" : "nabilanavab" },
-    "feedbtn" : { "Report any bugs you find!" : settings.REPORT },
-    "chgLang" : {"SETTING ⚙️ » CHANGE LANG 🌐" : "nabilanavab"},
-    "askApi" : "\n\nOpen the **Below** link and Send me the secret code:",
-    "waitApi" : { "Open link ✅" : "https://www.convertapi.com/a/signin" },
-    "error" : "Something went wrong while retrieving data from the database",
-    "result" : ["Settings cannot be updated ❌", "Settings Updated Successfully ✅"],
-    "back" : [{ "« BACK TO HOME «" : "Home|B2S" }, { "« BACK TO HOME «" : "Home|B2A" }],
-    "feedback" : "Bug warning! If my texts sound weird, it's probably Google Translate's fault."
-                 "\n\nReport a BUG in {} Lang:\n`• Specify Lang\n• Error Message\n• New Message`",
+    "lang" : "الآن، اختر أي لغة..",
+    "default" : ["الافتراضي ❌", "CUSTOM ✅"],
+    "cant" : "لا يمكن استخدام هذه الميزة ❌",
+    "wait" : { "في انتظار.. 🥱" : "nabilanavab" },
+    "feedbtn" : { "أبلغ عن أي أخطاء تجدها!" : settings.REPORT },
+    "chgLang" : {"الإعداد ⚙️ » تغيير لانج 🌐" : "nabilanavab"},
+    "askApi" : "\n\nافتح الرابط **أدناه** وأرسل لي الرمز السري:",
+    "waitApi" : { "افتح الرابط ✅" : "https://www.convertapi.com/a/signin" },
+    "error" : "حدث خطأ ما أثناء استرداد البيانات من قاعدة البيانات",
+    "result" : ["لا يمكن تحديث الإعدادات ❌", "تم تحديث الإعدادات بنجاح ✅"],
+    "back" : [{ "« الرئيسية «" : "Home|B2S" }, { "« الرئيسية «" : "Home|B2A" }],
+    "feedback" : "تحذير من الأخطاء! إذا كانت رسائلي تبدو غريبة، فمن المحتمل أن يكون خطأ ترجمة جوجل."
+                 "\n\nأبلغ عن خطأ في {} Lang:\n`• حدد Lang\n• رسالة خطأ\n• رسالة جديدة`",
     "ask" : [
-        "Now, Send me..",
-        "Now, Send me.. 😅\n\nFast.! I have no more time to go over the text.. 😏\n\n/cancel: to cancel"
+        "الآن، أرسل لي..",
+        "الآن، أرسل لي.. 😅\n\nبعيد.! ليس لدي المزيد من الوقت لمراجعة النص.. 😏\n\n/cancel: للإلغاء"
     ],
     "thumb" : [
         {
-            "SETTING ⚙️ » THUMBNAIL 📷" : "nabilanavab",
-            "♻ ADD ♻" : "set|thumb+",
-            "« BACK TO HOME «" : "Home|B"
+            "الاعدادات ⚙️ » THUMBNAIL 📷" : "nabilanavab",
+            "♻ أضف ♻" : "set|thumb+",
+            "« الرئيسية «" : "Home|B"
         },
         {
-            "SETTING ⚙️ » THUMBNAIL 📷" : "nabilanavab",
-            "♻ CHANGE ♻" : "set|thumb+",
-            "🗑 DELETE 🗑" : "set|thumb-",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » THUMBNAIL 📷" : "nabilanavab",
+            "♻ تغيير ♻" : "set|thumb+",
+            "🗑 حذف 🗑" : "set|thumb-",
+            "«  الرئيسية«" : "Home|B2S"
         }
     ],
     "fname" : [
         {
-            "SETTING ⚙️ » FNAME 📷" : "nabilanavab",
-            "♻ ADD ♻" : "set|fname+",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » FNAME 📷" : "nabilanavab",
+            "♻ أضف ♻" : "set|fname+",
+            "« الرئيسية «" : "Home|B2S"
         },
         {
-            "SETTING ⚙️ » FNAME 📷" : "nabilanavab",
-            "♻ CHANGE ♻" : "set|fname+",
-            "🗑 DELETE 🗑" : "set|fname-",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » FNAME 📷" : "nabilanavab",
+            "♻ تغيير ♻" : "set|fname+",
+            "🗑 حذف 🗑" : "set|fname-",
+            "« الرئيسية «" : "Home|B2S"
         }
     ],
     "api" : [
         {
-            "SETTING ⚙️ » API 📷" : "nabilanavab",
-            "♻ ADD ♻" : "set|api+",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » API 📷" : "nabilanavab",
+            "♻ أضف ♻" : "set|api+",
+            "« الرئيسية «" : "Home|B2S"
         },
         {
-            "SETTING ⚙️ » API 📷" : "nabilanavab",
-            "♻ CHANGE ♻" : "set|api+",
-            "🗑 DELETE 🗑" : "set|api-",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » API 📷" : "nabilanavab",
+            "♻ تغيير ♻" : "set|api+",
+            "🗑 حذف 🗑" : "set|api-",
+            "« الرئيسية «" : "Home|B2S"
         }
     ],
     "capt" : [
         {
-            "SETTING ⚙️ » CAPTION 📷" : "nabilanavab",
-            "♻ ADD ♻" : "set|capt+",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » CAPTION 📷" : "nabilanavab",
+            "♻ أضف ♻" : "set|capt+",
+            "« الرئيسية «" : "Home|B2S"
         },
         {
-            "SETTING ⚙️ » CAPTION 📷" : "nabilanavab",
-            "♻ CHANGE ♻" : "set|capt+",
-            "🗑 DELETE 🗑" : "set|capt-",
-            "« BACK TO HOME «" : "Home|B2S"
+            "الاعدادات ⚙️ » CAPTION 📷" : "nabilanavab",
+            "♻ تغيير ♻" : "set|capt+",
+            "🗑 حذف 🗑" : "set|capt-",
+            "« الرئيسية «" : "Home|B2S"
         }
     ]
 }
 
-BOT_COMMAND = {
-    "start" : "Welcome message..",
-    "txt2pdf" : "Create text PDF's"
-}
+BOT_COMMAND = {"start": "رسالة ترحيب ..", "txt2pdf": "إنشاء ملف PDF نصي"}
 
 STATUS_MSG = {
+    "HOME": "الآن , حدد أي خيار أدناه للحصول على الحالة الحالية 💱 ..` ",
     "_HOME" : {
-        "📊 ↓ SERVER ↓ 📊" : "nabilanavab",
-        "📶 STORAGE 📶" : "status|server",
-        "🥥 DATABASE 🥥" : "status|db",
-        "🌝 ↓ GET LIST ↓ 🌝": "nabilanavab",
-        "💎 ADMIN 💎" : "status|admin",
-        "👤 USERS 👤" : "status|users",
-        "« BACK «" : "Home|A"
-    },
-    "DB" : """📂 DATABASE :
-
-**◍ Database Users :** `{}` 📍
-**◍ Database Chats :** `{}` 📍""",
-    "SERVER" : """**◍ Total Space     :** `{}`
-**◍ Used Space     :** `{}({}%)`
-**◍ Free Space      :** `{}`
-**◍ CPU Usage      :** `{}`%
-**◍ RAM Usage     :** `{}`%
-**◍ Current Work  :** `{}`
-**◍ Message Id     :** `{}`""",
-    "USERS" : "Users in Database are.",
-    "NO_DB" : "No dataBASE set Yet 💩",
-    "ADMIN" : "**Total ADMIN:** __{}__\n",
-    "BACK" : { "« BACK «" : "status|home" },
-    "HOME" : "`Now, select any option below to get current STATUS 💱.. `",
+        "📊 ↓ SERVER ↓ 📊": "nabilanavab", "📶 STORAGE 📶": "status|server",
+        "🥥 قاعدة البيانات 🥥": "status|db" , "🌝 ↓ الحصول على قائمة ↓ 🌝": "nabilanavab",
+        "💎 المشرف 💎": "status|admin", "👤 المستخدمون 👤": "status|users",
+        "« رجوع  «": "Home|A"
+    } ,
+    "DB": """📂 قاعدة البيانات: \n \n ** ◍ مستخدمو قاعدة البيانات: **` {} `📍 \n ** ◍ محادثات قاعدة البيانات: **` {} `📍""" ,
+    "SERVER": """** ◍ المساحة الإجمالية: **` {} `
+** ◍ المساحة المستخدمة: ** `{} ({}٪)` \n ** ◍ مساحة حرة: ** `{}`
+** ◍ استخدام وحدة المعالجة المركزية: ** "{}`٪ \n ** ◍ استخدام ذاكرة الوصول العشوائي: ** `{}`٪
+** ◍ العمل الحالي: ** `{}` \n ** ◍ معرف الرسالة: ** `{}""" ,
+    "BACK": {"« BACK «": "status|home"}, "ADMIN": "** Total ADMIN: ** __ {} __ \n",
+    "USERS": "المستخدمون: \n\n" , "NO_DB": "لم يتم تعيين قاعدة البيانات بعد 💩"
 }
 
-feedbackMsg = f"IF YOU ❤ THIS BOT, JOIN OUR [UPDATE CHANNEL]({settings.OWNED_CHANNEL}) TO STAY INFORMED.\n\n[Write a FEEDBACK 📋]({settings.FEEDBACK})"
+feedbackMsg = f"[اكتب تعليقًا 📋]({settings.FEEDBACK})"
 
-# BANNED USER UI
 BAN = {
-    "UCantUse" : """Hey {}
+    "UCantUse" : """مرحبا {}
 
-FOR SOME REASON YOU CANT USE THIS BOT :(""",
-    "UCantUseDB" : """Hey {}
+لسبب ما لا يمكنك استخدام هذا الروبوت:(""",
+    "UCantUseDB" : """مرحبا {}
 
-FOR SOME REASON YOU CANT USE THIS BOT :(
+لسبب ما لا يمكنك استخدام هذا الروبوت :(
 
-REASON: {}""",
-    "GroupCantUse" : """{} NEVER EXPECT A GOOD RESPONSE FROM ME
+سبب: {}""",
+    "GroupCantUse" : """{} لا تتوقع أبدا استجابة جيدة مني
+منعني المشرفون من العمل هنا.. 🤭""",
+    "GroupCantUseDB" : """{} لا تتوقع أبدا استجابة جيدة مني
+منعني المشرفون من العمل هنا.. 🤭
 
-ADMINS RESTRICTED ME FROM WORKING HERE.. 🤭""",
-    "GroupCantUseDB" : """{} NEVER EXPECT A GOOD RESPONSE FROM ME
-
-ADMINS RESTRICTED ME FROM WORKING HERE.. 🤭
-
-REASON: {}""",
-    "cbNotU" : "Oops, Sorry to break your heart, this message is not for you 💔.\n\nBetter luck next time! 😏",
-    "Fool" : "Please don't try to fool me.. 🤭",
+سبب: {}""",
+    "cbNotU" : "عفوا، آسف لكسر قلبك، هذه الرسالة ليست لك 💔.\n\nحظا أفضل في المرة القادمة! 😏",
+    "Fool" : "من فضلك لا تحاول خداعي.. 🤭",
     "banCB" : {
-        "Create your Own Bot": f"{settings.SOURCE_CODE}",
-        "Tutorial": f"{settings.SOURCE_CODE}",
-        "Update Channel": "https://telegram.dog/ilovepdf_bot"
+        "قناة البوت": f"{settings.SOURCE_CODE}",
+        "تابع تحديثات": f"{settings.SOURCE_CODE}",
+        "انضم": "https://telegram.dog/i2pdfbotchannel"
     },
     "Force" : """Wait [{}](tg://user?id={})..!!
 
