@@ -198,180 +198,178 @@ BAN = {
         "تابع تحديثات": f"{settings.SOURCE_CODE}",
         "انضم": "https://telegram.dog/i2pdfbotchannel"
     },
-    "Force" : """Wait [{}](tg://user?id={})..!!
-
-Due To The Huge Traffic Only **Channel Members** Can Use this Bot 🚶
-
-This Means That You Need To **Join** The Below Mentioned Channel for Using Me!
-
-Hit on `"♻️retry♻️"` after joining.. 😅""",
+    "Force" : """مرحبا [{}](tg://user?id={}) 🤚🏻..!!
+🚸| عذرا عزيزي | sorry dear
+🔰| عليك الاشتراك بقناة البوت لتتمكن من استخدامه:
+🔰|  You have to subscribe to the bot channel to be able to use it:
+👇👇👇👇
+ @i2pdfbotchannel""",
     "ForceCB" : {
-        "🌟 JOIN CHANNEL 🌟" : "{0}",
-        "♻️ Refresh ♻️" : "refresh{1}"
+        "🌟أنظم في قناة🌟" : "{0}",
+        "♻️ تحديث ♻️" : "refresh{1}"
     },
 }
 
 checkPdf = {
-    "pg" : "`Number of Pages: •{}•` 🌟",
-    "pdf" : """`What should I do with this file.?`
+    "pg" : "`عدد الصفحات: •{}•` 🌟",
+    "pdf" : """`ماذا عليّ أن أفعل بهذا الملف.?`
 
-File Name : `{}`
-File Size : `{}`""",
+اسم الملف : `{}`
+حجم الملف : `{}`""",
     "pdfCB1" : {
-        "⭐ META£ATA ⭐" : "metaData",
-        "🗳️ PREVIEW 🗳️" : "preview",
-        "🖼️ IMAGES 🖼️" : "pdf|img",
-        "✏️ TEXT ✏️" : "pdf|txt",
-        "🔐 ENCRYPT 🔐" : "work|encrypt",
-        "🔒 DECRYPT 🔓" : "work|decrypt",
-        "🗜️ COMPRESS 🗜️" : "work|compress",
-        "🤸 ROTATE 🤸" : "pdf|rotate",
-        "✂️ SPLIT ✂️" : "pdf|split",
-        "🧬 MERGE 🧬" : "merge",
-        "™️ STAMP ™️" : "pdf|stp",
-        "✏️ RENAME ✏️" : "work|rename",
-        "🔗 URL 🔗" : "link",
-        "» 🏴‍☠️ MORE 🏴‍☠️ »" : "pdf2",
-        "🚫 CLOSE 🚫" : "close|all"
+        "⭐ معلومات ⭐" : "metaData",
+        "🗳️ عرض 🗳️" : "preview",
+        "🖼️ الصور 🖼️" : "pdf|img",
+        "✏️ نص ✏️" : "pdf|txt",
+        "🔐 تشفير 🔐" : "work|encrypt",
+        "🔒 فك تشفير 🔓" : "work|decrypt",
+        "🗜️ ضغط 🗜️" : "work|compress",
+        "🤸 تدوير 🤸" : "pdf|rotate",
+        "✂️ تقسيم ✂️" : "pdf|split",
+        "🧬 دمج 🧬" : "merge",
+        "™️ ختم ™️" : "pdf|stp",
+        "✏️ إعادة تسمية ✏️" : "work|rename",
+        "🔗 رابط 🔗" : "link",
+        "» 🏴‍☠️ المزيد 🏴‍☠️ »" : "pdf2",
+        "🚫 أغلق 🚫" : "close|all"
     },
     "pdfCB2" : {
-        " ↓ SECOND PAGE  ↓ " : "nabilanavab",
+        " ↓ الصفحة الثانية  ↓ " : "nabilanavab",
         "📝 OCR 📝" : "work|ocr",
-        "🥷 A4 FORMAT 🥷" : "work|format", 
-        "🖤 BLACK/WHITE 🤍" : "baw",
-        "🍴 SATUTATION 🍴" : "sat",
-        "📎 COMBINE PDF 📎" : "comb",
-        "🔎 ZOOM PDF 🔎" : "zoom",
-        "➖ DELETE PAGES ➖": "close|dev",
-        "➕ ADD PAGES ➕" : "close|dev",
-        "🎨 DRAW PDF 🎨" : "draw",
-        "😈 CODEC 😈" : "close|dev",
-        "💦 WATERMARK 💦" : "close|dev",
-        "« 🏴‍☠️ BACK 🏴‍☠️ «" : "pdf1",
-        "🚫 CLOSE 🚫" : "close|all"
+        "🥷 A4 تنسيق 🥷" : "work|format", 
+        "🖤 أسود/أبيض 🤍" : "baw",
+        "🍴 ساتوتيشن 🍴" : "sat",
+        "📎 اربع سلايدات 📎" : "comb",
+        "🔎 تكبير PDF 🔎" : "zoom",
+        "➖ حذف الصفحات ➖": "close|dev",
+        "➕ أضف صفحات ➕" : "close|dev",
+        "🎨 رسم PDF 🎨" : "draw",
+        "😈 سلايدين 😈" : "close|dev",
+        "💦 عَلامة مائيّة 💦" : "close|dev",
+        "« 🏴‍☠️ عودة 🏴‍☠️ «" : "pdf1",
+        "🚫 أغلق 🚫" : "close|all"
     },
-    "error" : """__I can't do anything with this file.__ 😏
+    "error" : """__لا يمكنني فعل أي شيء بهذا الملف.__ 😏
 
 🐉  `CODEC ERROR`  🐉""",
     "errorCB" : {
-        "❌ ERROR IN CODEC ❌" : "error",
-        "🔸 CLOSE 🔸" : "close|all"
+        "❌ خطأ في الترميز ❌" : "error",
+        "🔸 آغلق 🔸" : "close|all"
     },
-    "encrypt" : """`FILE IS ENCRYPTED` 🔐
+    "encrypt" : """`الملف مشفر.` 🔐
 
-File Name: `{}`
-File Size: `{}`""",
-    "encryptCB" : {"🔓 DECRYPT 🔓" : "work|decrypt"}
+اسم الملف: `{}`
+حجم الملف: `{}`""",
+    "encryptCB" : {"🔓 فك تشفير 🔓" : "work|decrypt"}
 }
 
 PROGRESS = {
-    "progress" : """\n**Done ✅ : **{0}/{1}
-**Speed 🚀:** {2}/s
-**Estimated Time ⏳:** {3}""",
-    "workInP" : "WORK IN PROGRESS.. 🙇",
-    "upFile" : "`Started Uploading..`📤",
-    "refresh" : { "♻️ Refresh ♻️" : "{}" },
-    "dlFile" : "`Downloading your file..` 📥",
-    "dlImage" : "`Downloading your Image..⏳`",
-    "upFileCB" : {"📤 .. UPLOADING.. 📤" : "nabilanavab"},
-    "takeTime" : """```⚙️ Work in Progress..`
-`It might take some time..```💛""",
-    "cbPRO_D" : ["📤 DOWNLOAD: {:.2f}% 📤", "🎯 CANCEL 🎯"],
-    "cbPRO_U" : ["📤 UPLOADED: {:.2f}% 📤", "🎯 CANCEL 🎯"]
+    "progress" : """\n**تم✅ : **{0}/{1}
+**السرعة🚀:** {2}/s
+**الوقت المستغرق ⏳:** {3}""",
+    "workInP" : "العمل قيد التقدم.. 🙇",
+    "upFile" : "`بدأ التحميل.. `📤",
+    "refresh" : { "♻️ تحديث ♻️" : "{}" },
+    "dlFile" : "`تنزيل ملفك..` 📥",
+    "dlImage" : "`قم بتنزيل صورتك.. ⏳`",
+    "upFileCB" : {"📤 .. تحميل.. 📤" : "nabilanavab"},
+    "takeTime" : """```⚙️ العمل قيد التقدم..`
+`قد يستغرق الأمر بعض الوقت..```💛""",
+    "cbPRO_D" : ["📤 تنزيل: {:.2f}% 📤", "🎯 الالغاء 🎯"],
+    "cbPRO_U" : ["📤 تحميل: {:.2f}% 📤", "🎯 الالغاء 🎯"]
 }
 
 GENERATE = {
-    "noQueue" : "`No Queue found..`😲",
-    "noImages" : "No image found.!! 😒",
-    "currDL" : "Downloaded {} Images 🥱",
-    "geting" : "File Name: `{}`\nPages: `{}`",
-    "getFileNm" : "Now Send Me a File Name 😒: ",
-    "deleteQueue" : "`Queue deleted Successfully..`🤧",
-    "getingCB" : {"📚 GENERATING PDF.." : "nabilanavab"},
+    "noQueue" : "`لم يتم العثور على قائمة انتظار..`😲",
+    "noImages" : "لم يتم العثور على صورة.!! 😒",
+    "currDL" : "تم تنزيل {} صور 🥱",
+    "geting" : "اسم الملف: `{}`\nالصفحات: `{}`",
+    "getFileNm" : "أرسل لي الآن اسم الملف 😒: ",
+    "deleteQueue" : "`تم حذف قائمة الانتظار بنجاح..`🤧",
+    "getingCB" : {"📚 إنشاء ملف PDF.." : "nabilanavab"},
 }
 
 document = {
     "reply" : checkPdf['pdf'],
     "upFile" : PROGRESS['upFile'],
-    "process" : "⚙️ Processing..",
+    "process" : "⚙️ المعالجة..",
     "replyCB" : checkPdf['pdfCB1'],
     "inWork" : PROGRESS['workInP'],
     "download" : PROGRESS['dlFile'],
     "refresh" : PROGRESS['refresh'],
     "dlImage" : PROGRESS['dlImage'],
     "takeTime" : PROGRESS['takeTime'],
-    "fromFile" : "`Converted: {} to {}`",
-    "unsupport" : "Unsupported file..🙄`",
-    "cancelCB" : { "⟨ Cancel ⟩" : "close|me" },
-    "generate" : { "GENERATE 📚" : "generate" },
+    "fromFile" : "`تم التحويل: {} إلى {}`",
+    "unsupport" : "ملف غير مدعوم.. 🙄`",
+    "cancelCB" : { "⟨ الالغاء ⟩" : "close|me" },
+    "generate" : { "الانشاء 📚" : "generate" },
     "generateRN" : {
-        "GENERATE 📚" : "generate",
-        "RENAME ✍️" : "generateREN"
+        "الانشاء 📚" : "generate",
+        "إعادة التسمية ✍️" : "generateREN"
     },
-    "noAPI" : """`Please add convert API.. 💩
+    "noAPI" : """`يرجى إضافة واجهة برمجة تطبيقات التحويل.. 💩
 
-start » settings » api » add/change`""",
-    "error" : """SOMETHING went WRONG.. 🐉
+/start » الاعدادات » api » إضافة/تغيير`""",
+    "error" : """حدث خطأ ما.. 🐉
 
-ERROR: `{}`""",
-    "setHdImg" : """Now Image To PDF is in HD mode 😈""",
-    "setDefault" : { "« Back to Default Quality «" : "close|hd" },
-    "useDOCKER" : "`File Not Supported, deploy bot using docker`",
-    "big" : """Due to Overload, Owner limits {}mb for pdf files 🙇
+خطا: `{}`""",
+    "setHdImg" : """الآن الصورة إلى PDF في وضع HD 😈""",
+    "setDefault" : { "« العودة إلى الجودة الافتراضية «" : "close|hd" },
+    "useDOCKER" : "`الملف غير مدعوم، قم بنشر الروبوت باستخدام عامل الميناء`",
+    "big" : """بسبب الحمل الزائد، حدود المالك {}MB لملفات pdf 🙇
 
-`please Send me a file less than {}mb Size` 🙃""",
+`من فضلك أرسل لي ملفا أقل من {}MB Size` 🙃""",
     "bigCB" : {
-        "💎 Create 2Gb Support Bot 💎" : "https://github.com/nabilanavab/ilovepdf"
+        "💎 قناة البوت 💎" : "https://t.me/i2pdfbotchannel"
     },
-    "imageAdded" : """`Added {} pages to your PDF..`🤓
+    "imageAdded" : """`تمت إضافة {} صفحات إلى ملف PDF الخاص بك..`🤓
 
-fileName: `{}.pdf`"""
+اسم الملف: `{}.pdf`"""
 }
 
 gDocument = {
-    "admin" : """Due to Some Telegram Limits..
+    "admin" : """بسبب بعض حدود تيليجرام..
+لا يمكنني العمل إلا كمشرف
+__من فضلك قم بالترويج لي كمشرف__ ☺️""",
+    "notDOC" : "أخي، يرجى الرد على مستند أو صورة.. 🤧",
+    "Gadmin" : """يمكن لمسؤولي المجموعة فقط استخدام هذا الروبوت
+وإلا تعال إلى جهازي الشخصي 😋""",
+    "adminO" : """`يمكن للمشرفين فقط القيام بذلك..`
 
-I can only work as an admin
-__Please promote me as admin__ ☺️""",
-    "notDOC" : "Broh Please Reply to a Document or an Image..🤧",
-    "Gadmin" : """Only Group Admins Can Use This Bot
-Else Come to my Pm 😋""",
-    "adminO" : """`Only admins can do it..`
-
-Or try on your pdfs(__reply to your message__)"""
+أو جرب ملفات pdf الخاصة بك(__الرد على رسالتك__)"""
 }
 gDocument.update(document)
 
-noHelp = f"`No one gonna help you` 😏"
+noHelp = f"`لن يساعدك أحد` 😏"
 
 split = {
     "work" : ["Range", "Single"],
     "inWork" : PROGRESS['workInP'],
     "download" : PROGRESS['dlFile'],
     "cancelCB" : document['cancelCB'],
-    "exit" : "`Process Cancelled..` 😏",
+    "exit" : "`تم إلغاء العملية..` 😏",
     "button" : {
-        "⚙️ PDF » SPLIT ↓" : "nabilanavab",
-        "With In Range 🦞" : "split|R",
-        "Single Page 🐛" : "split|S",
-        "« BACK «" : "pdf1"
+        "⚙️ PDF » تقسيم ↓" : "nabilanavab",
+        "بنطاق 🦞" : "split|R",
+        "صفحات منفصلة 🐛" : "split|S",
+        "« عودة «" : "pdf1"
     },
-    "over" : "`5 attempts over.. Process cancelled..`😏",
-    "pyromodASK_1" : """__PDF Split » By Range
-Now, Enter the range (start:end) :__
+    "over" : "`انتهت 5 محاولات.. تم إلغاء العملية..`😏",
+    "pyromodASK_1" : """__PDF تقسيم » تقسيم بنطاق\n
+الآن، أدخل النطاق (البداية: النهاية) :__
 
-/exit __to cancel__""",
-    "completed" : "`Downloading Completed..` ✅",
-    "error_1" : "`Syntax Error: justNeedStartAndEnd `🚶",
-    "error_2" : "`Syntax Error: errorInEndingPageNumber `🚶",
-    "error_3" : "`Syntax Error: errorInStartingPageNumber `🚶",
-    "error_4" : "`Syntax Error: pageNumberMustBeADigit` 🧠",
-    "error_5" : "`Syntax Error: noEndingPageNumber Or notADigit` 🚶",
-    "error_6" : "`Can't find any number..`😏",
-    "error_7" : "`Something went Wrong..`😅",
-    "error_8" : "`Enter Numbers less than {}..`😏",
-    "error_9" : "`1st Check Number of pages` 😏",
-    "upload" : "⚙️ `Started Uploading..` 📤"
+/exit __للإلغاء__""",
+    "completed" : "`اكتمل التنزيل..` ✅",
+    "error_1" : "`خطا بنطاق: justNeedStartAndEnd `🚶",
+    "error_2" : "`خطا بنطاق: errorInEndingPageNumber `🚶",
+    "error_3" : "`خطا بنطاق: errorInStartingPageNumber `🚶",
+    "error_4" : "`خطا بنطاق pageNumberMustBeADigit` 🧠",
+    "error_5" : "`خطا بنطاق: noEndingPageNumber Or notADigit` 🚶",
+    "error_6" : "`لا يمكنني العثور على أي رقم..`😏",
+    "error_7" : "`حدث خطأ ما..`😅",
+    "error_8" : "`أدخل أرقاما أقل من {}..`😏",
+    "error_9" : "`التحقق الأول من عدد الصفحات` 😏",
+    "upload" : "⚙️ `بدأت التحميل..` 📤"
 }
 
 pdf2IMG = {
@@ -380,77 +378,78 @@ pdf2IMG = {
     "process" : document['process'],
     "download" : PROGRESS['dlFile'],
     "toImage" : {
-        "⚙️ PDF » IMAGES ↓" : "nabilanavab",
-        "🖼 IMG 🖼" : "pdf|img|img",
-        "📂 DOC 📂" : "pdf|img|doc",
+        "⚙️ PDF » صور ↓" : "nabilanavab",
+        "🖼 صور 🖼" : "pdf|img|img",
+        "📂 ملف 📂" : "pdf|img|doc",
         "🤐 ZIP 🤐" : "pdf|img|zip",
         "🎯 TAR 🎯" : "pdf|img|tar",
-        "« BACK «" : "pdf1" 
+        "« عودة «" : "pdf1" 
     },
     "imgRange" : {
-        "⚙️ PDF » IMAGES » {} ↓" : "nabilanavab",
-        "🙄 ALL 🙄" : "p2img|{}A",
-        "🤧 RANGE 🤧" : "p2img|{}R",
-        "🌝 PAGES 🌝" : "p2img|{}S",
-        "« BACK «" : "pdf|img"
+        "⚙️ PDF » صور » {} ↓" : "nabilanavab",
+        "🙄 الكل 🙄" : "p2img|{}A",
+        "🤧 بنطاق 🤧" : "p2img|{}R",
+        "🌝 صفحات 🌝" : "p2img|{}S",
+        "« عودة «" : "pdf|img"
     },
-    "over" : "`5 attempt over.. Process canceled..`😏",
-    "pyromodASK_1" : """__Pdf - Img›Doc » Pages:
-Now, Enter the range (start:end) :__
+    "over" : "`5 محاولات انتهت.. تم إلغاء العملية..`😏",
+    "pyromodASK_1" : """__Pdf - Img›Doc » صفحات:
+الآن، أدخل النطاق (البداية: النهاية) :__
 
-/exit __to cancel__""",
-    "pyromodASK_2" : """"__Pdf - Img›Doc » Pages:
-Now, Enter the Page Numbers seperated by__ (,) :
+/exit __للإلغاء__""",
+    "pyromodASK_2" : """"__Pdf - Img›Doc » صفحات:
+الآن، أدخل أرقام الصفحات المفصلة بواسطة__ (,) :
 
-/exit __to cancel__""",
-    "exit" : "`Process Canceled..` 😏",
-    "error_1" : "`Syntax Error: justNeedStartAndEnd `🚶",
-    "error_2" : "`Syntax Error: errorInEndingPageNumber `🚶",
-    "error_3" : "`Syntax Error: errorInStartingPageNumber `🚶",
-    "error_4" : "`Syntax Error: pageNumberMustBeADigit` 🧠",
-    "error_5" : "`Syntax Error: noEndingPageNumber Or notADigit` 🚶",
-    "error_6" : "`Can't find any number..`😏",
-    "error_7" : "`Something went Wrong..`😅",
-    "error_8" : "`PDF only have {} pages` 💩",
-    "error_9" : "`1st Check Number of pages` 😏",
-    "error_10" : "__Due to Some restrictions Bot Sends Only 50 pages as ZIP..__😅",
-    "total" : "`Total pages: {}..⏳`",
-    "upload" : "`Uploading: {}/{} pages.. 🐬`",
-    "current" : "`Converted: {}/{} pages.. 🤞`",
-    "complete" : "`Uploading Completed.. `🏌️",
-    "canceledAT" : "`Canceled at {}/{} pages..` 🙄",
-    "cbAns" : "⚙️ okDA, Canceling.. ",
-    "cancelCB" : {"💤 CANCEL 💤" : "close|P2I"},     # EDITABLE: ❌
-    "canceledCB" : {"🍄 CANCELLED 🍄" : "close|P2IDONE"},
-    "completed" : {"😎 COMPLETED 😎" : "close|P2ICOMP"}
+/exit __للإلغاء__""",
+    "exit" : "`تم إلغاء العملية..` 😏",
+    "error_1" : "`خطا بكتابة جملة: justNeedStartAndEnd `🚶",
+    "error_2" : "`خطا بكتابة جملة: errorInEndingPageNumber `🚶",
+    "error_3" : "`خطا بكتابة جملة: errorInStartingPageNumber `🚶",
+    "error_4" : "`خطا بكتابة جملة: pageNumberMustBeADigit` 🧠",
+    "error_5" : "`خطا بكتابة جملة: noEndingPageNumber Or notADigit` 🚶",
+    "error_6" : "`لا يمكنني العثور على أي رقم..`😏",
+    "error_7" : "`حدث خطأ ما..`😅",
+    "error_8" : "`يحتوي ملف PDF على {} صفحات فقط` 💩",
+    "error_9" : "`التحقق الأول من عدد الصفحات` 😏",
+    "error_10" : "__بسبب بعض القيود، يرسل بوت 50 صفحة فقط كرمز البريدي..__😅",
+    "total" : "`مجموع الصفحات: {}..⏳`",
+    "upload" : "`تحميل: {}/{} الصفحات.. 🐬`",
+    "current" : "`حولت: {}/{} الصفحات.. 🤞`",
+    "complete" : "`اكتمل التحميل..`🏌️",
+    "canceledAT" : "`الغيت {}/{} الصفحات..` 🙄",
+    "cbAns" : "⚙️ إلغاء... ",
+    "cancelCB" : {"💤 إلغاء 💤" : "close|P2I"},     # EDITABLE: ❌
+    "canceledCB" : {"🍄 ملغية 🍄" : "close|P2IDONE"},
+    "completed" : {"😎 مكتملة 😎" : "close|P2ICOMP"}
 }
 
 merge = {
     "inWork" : PROGRESS['workInP'],
     "process" : document['process'],
     "upload" : PROGRESS['upFile'],
-    "load" : "__Due to Overload you can only merge 5 PDFs at a time__",
-    "sizeLoad" : "`Due to Overload Bot Only Support %sMb PDFs..", # removing %s show error
-    "pyromodASK" : """__MERGE pdfs » Total PDFs in queue: {}__
+    "load" : "__بسبب التحميل الزائد، يمكنك دمج 5 ملفات PDF فقط في كل مرة__",
+    "sizeLoad" : "`بسبب التحميل الزائد، يدعم Bot فقط %sMb PDFs..", # removing %s show error
+    "pyromodASK" : """__دمج pdfs » إجمالي ملفات PDF في قائمة الانتظار: {}__
 
-/exit __to cancel__
-/merge __to merge__""",
-    "exit" : "`Process Cancelled..` 😏",
-    "total" : "`Total PDFs : {} 💡",
-    "current" : "__Started Downloading PDF : {} 📥__",
-    "cancel" : "`Merging Process Cancelled.. 😏`",
-    "started" : "__Merging Started.. __ 🪄",
-    "caption" : "`Merged PDF 🙂`",
-    "error" : """`May be File Encrypted..`
+/exit __للإلغاء__
 
-Reason: {}"""
+/merge __لدمج__""",
+    "exit" : "`تم إلغاء العملية..` 😏",
+    "total" : "`إجمالي ملفات PDF: {} 💡",
+    "current" : "__بدأت في تنزيل ملف PDF: {} 📥__",
+    "cancel" : "`تم إلغاء عملية الدمج.. 😏`",
+    "started" : "__بدأ الدمج__ 🪄",
+    "caption" : "`ملف PDF مدمج 🙂`",
+    "error" : """`قد يكون الملف مشفرا..`
+
+سبب: {}"""
 }
 
 metaData = {
     "inWork" : PROGRESS['workInP'],
     "process" : document['process'],
     "download" : PROGRESS['dlFile'],   # [❌]
-    "read" : "Please read this message again.. 🥴"
+    "read" : "يرجى قراءة هذه الرسالة مرة أخرى.. 🥴"
 }
 
 preview = {
@@ -458,51 +457,37 @@ preview = {
     "process" : document['process'],
     "error" : document['error'],
     "download" : PROGRESS['dlFile'],
-    "_" : "PDF only have {} pages 🤓\n\n",
-    "__" : "PDF pages: {}\n\n",
-    "total" : "`Total pages: {}..` 🤌",
-    "album" : "`Preparing an Album..` 🤹",
-    "upload" : f"`Uploading: preview pages.. 🐬`"
+    "_" : "يحتوي ملف PDF على {} صفحات فقط 🤓\n\n",
+    "__" : "صفحات PDF: {}\n\n",
+    "total" : "`مجموع الصفحات: {}..` 🤌",
+    "album" : "`إعداد ألبوم..` 🤹",
+    "upload" : f"`التحميل: صفحات المعاينة.. 🐬`"
 }
 
 stamp = {
-    "stamp" : {
-        "⚙️ PDF » STAMP ↓" : "nabilanavab",
-        "Not For Public Release 🤧" : "pdf|stp|10",
-        "For Public Release 🥱" : "pdf|stp|8",
-        "Confidential 🤫" : "pdf|stp|2",
-        "Departmental 🤝" : "pdf|stp|3",
-        "Experimental 🔬" : "pdf|stp|4",
-        "Expired 🐀" : "pdf|stp|5",
-        "Final 🔧" : "pdf|stp|6",
-        "For Comment 🗯️" : "pdf|stp|7",
-        "Not Approved 😒" : "pdf|stp|9",
-        "Approved 🥳" : "pdf|stp|0",
-        "Sold ✊" : "pdf|stp|11",
-        "Top Secret 😷" : "pdf|stp|12",
-        "Draft 👀" : "pdf|stp|13",
-        "AsIs 🤏" : "pdf|stp|1",
-        "« BACK «" : "pdf1"
-    },
-    "stampA" : {
-        "⚙️ PDF » STAMP » COLOR ↓" : "nabilanavab",
-        "Red ❤️" : "spP|{}|r",
-        "Blue 💙" : "spP|{}|b",
-        "Green 💚" : "spP|{}|g",
-        "Yellow 💛" : "spP|{}|c1",
-        "Pink 💜" : "spP|{}|c2",
-        "Hue 💚" : "spP|{}|c3",
-        "White 🤍" : "spP|{}|c4",
-        "Black 🖤" : "spP|{}|c5",
-        "« Back «" : "pdf|stp"
-    },
-    "inWork" : PROGRESS['workInP'],
-    "process" : document['process'],
-    "download" : PROGRESS['dlFile'],
-    "upload" : PROGRESS['upFile'],
-    "stamping" : "`Started Stamping..` 💠",
-    "caption" : """stamped pdf\ncolor : `{}`
-annot : `{}`"""
+    "stamp": {
+        "⚙️ PDF» STAMP ↓ ":"nabilanavab",
+        "ليس للنشر العام 🤧": "pdf|stp|10",
+        "للإصدار العام 🥱": "pdf|stp|8",
+        "سري 🤫": "pdf|stp|2", "Departmental 🤝": "pdf|stp|3",
+        "التجريبية 🔬": "pdf|stp|4", "انتهاء الصلاحية 🐀": "pdf|stp|5",
+        "نهائي 🔧": "pdf|stp|6", "للتعليق 🗯️": "pdf|stp|7",
+        "غير معتمد 😒": "pdf|stp|9", "موافق عليه 🥳": "pdf|stp|0",
+        "تم البيع ✊": "pdf|stp|11", "سري للغاية 😷": "pdf|stp|12",
+        "مسودة 👀": "pdf|stp|13", "AsIs 🤏": "pdf|stp|1",
+        "« رجوع «": "pdf"
+    } ,
+    "stampA": {
+        "⚙️ PDF» STAMP »COLOR ↓": "nabilanavab" ,
+        "أحمر ❤️": "spP|{}|r", "أزرق 💙": "spP|{}|b" ,
+        "أخضر 💚": "spP|{}|g", "Yellow 💛": "spP|{}|c1",
+        "الوردي 💜": "spP|{}|c2" , "Hue 💚": "spP|{}|c3" ,
+        "أبيض 🤍": "spP|{}|c4", "أسود 🖤": "spP|{}|c5" ,
+        "« رجوع «": "pdf|stp"
+    } ,
+    "inWork": PROGRESS['workInP'], "process": document['process'],
+    "download": PROGRESS['dlFile'] , "upload": PROGRESS['upFile'] ,
+    "stamping": "بدء ختم..` 💠", "caption": """pdf مختوم \n اللون:` {} `\n لا:` {} `"""
 }
 
 work = {
@@ -512,114 +497,114 @@ work = {
     "takeTime" : PROGRESS['takeTime'],
     "upload" : PROGRESS['upFile'],
     "button" : document['cancelCB'],
-    "rot360" : "You have some **big problem..🙂**",
-    "ocrError" : "Owner Restricted 😎🤏",
-    "largeNo" : "Send a PDF file less than 5 pages.. 🙄",
+    "rot360" : "لديك بعض **مشكلة كبيرة.. 🙂**",
+    "ocrError" : "مالك محضور 😎🤏",
+    "largeNo" : "أرسل ملف PDF أقل من 5 صفحات.. 🙄",
     "pyromodASK_1" : """__PDF {} »
-Now, please enter the PASSWORD :__
+الآن، يرجى إدخال كلمة المرور :__
 
-/exit __to cancel__""",
-    "pyromodASK_2" : """__Rename PDF »
-Now, please enter the NEW NAME:__
+/exit __للإلغاء__""",
+    "pyromodASK_2" : """__تمسية PDF »
+الآن، يرجى إدخال الاسم الجديد:__
 
-/exit __to cancel__""",
-    "exit" : "`process canceled.. `😏",
-    "ren_caption" : "__New Name:__ `{}`", 
-    "notENCRYPTED" : "`File is Not Encrypted..` 👀",
-    "compress" : """⚙️ ```Started Compressing.. 🌡️
-It might take some time..```💛""",
-    "decrypt" : """⚙️ ```Started Decrypting.. 🔓
-It might take some time..```💛""",
-    "encrypt" : """⚙️ ```Started Encrypting.. 🔐
-It might take some time..```💛""",
-    "ocr" : """⚙️ ```Adding OCR Layer.. ✍️
-It might take some time..```💛""",
-    "format" : """⚙️ ```Started Formatting.. 🤘
-It might take some time..```💛""",
-    "rename" : """⚙️ ```Renameing PDf.. ✏️
-It might take some time..```💛""",
-    "rot" : """⚙️ ```Rotating PDf.. 🤸
-It might take some time..```💛""",
-    "pdfTxt" : """⚙️ ```Extracting Text.. 🐾
-It might take some time..```💛""",
-    "fileNm" : """Old Filename: {}
-New Filename: {}""",
+/exit __للإلغاء__""",
+    "exit" : "`تم إلغاء العملية..`😏",
+    "ren_caption" : "__اسم جديد:__ `{}`", 
+    "notENCRYPTED" : "`الملف غير مشفر..` 👀",
+    "compress" : """⚙️ ```بدأت في الضغط..🌡️
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "decrypt" : """⚙️ ```بدأت في فك التشفير.. 🔓
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "encrypt" : """⚙️ ```بدأت في التشفير.. 🔐
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "ocr" : """⚙️ ```إضافة طبقة التعرف الضوئي على الحروف.. ✍️
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "format" : """⚙️ ```بدأت التنسيق.. 🤘
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "rename" : """⚙️ ```إعادة تسمية PDf..✏️
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "rot" : """⚙️ ```تدوير PDf.. 🤸
+قد يستغرق ذلك بعض الوقت..```💛""",
+    "pdfTxt" : """⚙️ ```استخراج النص.. 🐾
+قد يستغرق الأمر بعض الوقت..```💛""",
+    "fileNm" : """اسم الملف القديم: {}
+اسم ملف جديد: {}""",
     "rotate" : {
-        "⚙️ PDF » ROTATE ↓" : "nabilanavab",
+        "⚙️ PDF » تدوير ↓" : "nabilanavab",
         "90°" : "work|rot90",
         "180°" : "work|rot180",
         "270°" : "work|rot270",
         "360°" : "work|rot360",
-        "« BACK «" : "pdf1"
+        "« عودة «" : "pdf1"
     },
     "txt" : {
-        "⚙️ PDF » TXT ↓" : "nabilanavab",
-        "📜 MESSAGE 📜" : "work|M",
-        "🧾 TXT FILE 🧾" : "work|T",
+        "⚙️ PDF » نص ↓" : "nabilanavab",
+        "📜 رسالة 📜" : "work|M",
+        "🧾 ملف نصي 🧾" : "work|T",
         "🌐 HTML 🌐" : "work|H",
         "🎀 JSON 🎀" : "work|J",
-        "« BACK «" : "pdf1"
+        "« عودة «" : "pdf1"
     }
 }
 
 PROCESS = {
     "ocr" : "OCR added",
-    "decryptError" : "__Cannot Decrypt the file with__ `{}` 🕸️",
-    "decrypted" : "__Decrypted File__",
-    "encrypted" : "__Page Number__: {}\n__key__ 🔐: ||{}||",
-    "compressed" : """`Original Size : {}
-Compressed Size : {}
+    "decryptError" : "__لا يمكن فك تشفير الملف باستخدام__ `{}` 🕸️",
+    "decrypted" : "__ملف غير مشفر__",
+    "encrypted" : "__رقم الصفحة__: {}\n__المفتاح__ 🔐: ||{}||",
+    "compressed" : """`الحجم الأصلي : {}
+الحجم المضغوط. : {}
 
-Ratio : {:.2f} %`""",
-    "cantCompress" : "File Can't be Compressed More..🤐",
-    "pgNoError" : """__For Some Reason A4 FORMATTING Supports only for PDFs with less than 5 Pages__
+النسبة : {:.2f} %`""",
+    "cantCompress" : "لا يمكن ضغط الملف أكثر.. 🤐",
+    "pgNoError" : """__لسبب ما يدعم تنسيق A4 فقط ملفات PDF التي تحتوي على أقل من 5 صفحات__
 
-Total Pages: {} ⭐""",
-    "ocrError" : "`Already Have A Text Layer.. `😏",
-    "90" : "__Rotated 90°__",
-    "180" : "__Rotated 180°__",
-    "270" : "__Rotated 270°__",
-    "formatted" : "A4 Formatted File",
-    "M" : "♻ Extracted {} Pages ♻",
-    "H" : "HTML File",
-    "T" : "TXT File",
-    "J" : "JSON File"
+مجموع صفحات: {} ⭐""",
+    "ocrError" : "`لديك بالفعل طبقة نصية.. `😏",
+    "90" : "__دور ب 90°__",
+    "180" : "__دور ب 180°__",
+    "270" : "__دور ب 270°__",
+    "formatted" : "ملف بتنسيق A4",
+    "M" : "♻ صفحات {} مستخرجة ♻",
+    "H" : "HTML ملف",
+    "T" : "TXT ملف",
+    "J" : "JSON ملف"
 }
 
 pdf2TXT = {
     "upload" : PROGRESS["upFile"],
     "exit" : split['exit'],
-    "nothing" : "Nothing to create.. 😏",
-    "TEXT" : "`Create PDF From Text Messages »`",
-    "start" : "Started Converting txt to Pdf..🎉",
+    "nothing" : "لا شيء لإنشائه.. 😏",
+    "TEXT" : "`قم بإنشاء ملف PDF من الرسائل النصية »`",
+    "start" : "بدأت في تحويل النص إلى قوات دي إف.. 🎉",
     "font_btn" : {
-        "TXT@PDF » SET FONT" : "nabilanavab",
+        "TXT@PDF » تعيين الخط" : "nabilanavab",
         "Times" : "pdf|font|t",
         "Courier" : "pdf|font|c",
         "Helvetica (Default)" : "pdf|font|h",
         "Symbol" : "pdf|font|s",
         "Zapfdingbats" : "pdf|font|z",
-        "🚫 CLOSE 🚫" : "close|me"
+        "🚫 اغلق 🚫" : "close|me"
     },
     "size_btn" : {
-        "TXT@PDF » {} » SET SCALE" : "nabilanavab",
+        "TXT@PDF » {} » مقياس محدد" : "nabilanavab",
         "Portarate" : "t2p|{}|p",
         "Landscape" : "t2p|{}|l",
-        "« Back «": "pdf|T2P"
+        "« عودة «": "pdf|T2P"
     },
-    "askT" : """__TEXT TO PDF » Now, please enter a TITLE:__
+    "askT" : """__نص إلى PDF » الآن، يرجى إدخال عنوان:__
 
-/exit __to cancel__\n/skip __to skip__""",
-    "askC" : """__TEXT TO PDF » Now, please enter paragraph {}:__
+/exit __للالغاء__\n/skip __to skip__""",
+    "askC" : """__النص إلى PDF » الآن، يرجى إدخال الفقرة{}:__
 
-/exit __to cancel__\n/create __to create__"""
+/exit __للالغاء__\n/create __لإنشاء __"""
 }
 
 URL = {
-    "notPDF" : "`Not a PDF File",
+    "notPDF" : "`ليس ملف PDF",
     "close" : { "close" : "close|all" },
-    "get" : {"🧭 Get PDF File 🧭" : "getFile"},
-    "error" : """🐉 SOMETHING WENT WRONG 🐉,
+    "get" : {"🧭 احصل على ملف PDF 🧭" : "getFile"},
+    "error" : """🐉 حدث خطأ ما 🐉,
 
 ERROR: `{}`
 
