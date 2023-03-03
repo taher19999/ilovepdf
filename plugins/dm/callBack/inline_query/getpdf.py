@@ -56,14 +56,14 @@ async def download(name, download_link, bot, callbackQuery):
                         reply_markup = InlineKeyboardMarkup(
                             [[
                                 InlineKeyboardButton(
-                                    "📥 DOWNLOADED {:.2f}% 📥".format(
+                                    "📥 تنزيل {:.2f}% 📥".format(
                                         current/total_size * 100
                                     ),
                                     callback_data = f"{callbackQuery.data}"
                                 )
                             ],[
                                 InlineKeyboardButton(
-                                    "🗑️ CANCEL 🗑️",
+                                    "🗑️ الالغاء 🗑️",
                                     callback_data = f"c{callbackQuery.data[1:]}"
                                 )
                             ]]
@@ -79,7 +79,7 @@ pdfDRIVE = filters.create(lambda _, __, query: query.data.startswith("pD|"))
 async def pdfDriver(bot, callbackQuery):
     try:
         if not (callbackQuery.from_user.id == int(callbackQuery.data.split("|")[2])):
-            return await callbackQuery.answer("message not for you..")
+            return await callbackQuery.answer("رسالة ليست لك..")
         
         getMSG = await bot.get_messages(
             chat_id = int(log.LOG_CHANNEL),
@@ -87,30 +87,30 @@ async def pdfDriver(bot, callbackQuery):
         )
         
         if getMSG.empty:
-            return await callbackQuery.answer("old queue..")
+            return await callbackQuery.answer("طابور قديم..")
         
         if await work(callbackQuery, "check", False):
-            return await callbackQuery.answer("bot is currently working for you..")
+            return await callbackQuery.answer("يعمل الروبوت حاليا من أجلك..")
         await work(callbackQuery, "create", False)
         
         link = getMSG.caption.split("•")[1]
         id, hash = await pdf_drive(link)
         
         if not id or not hash:
-            return await callbackQuery.answer("something went wrong..")
-        await callbackQuery.answer("wait..")
+            return await callbackQuery.answer("حدث خطأ ما..")
+        await callbackQuery.answer("انتظر..")
         
         await bot.edit_inline_reply_markup(
             inline_message_id = callbackQuery.inline_message_id,
             reply_markup = InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton(
-                        "🍪 COOKING DATA 🍪",
+                        "تنزيل الان",
                         callback_data = f"{callbackQuery.data}"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "🗑️ CANCEL 🗑️",
+                        "🗑️ الالغاء 🗑️",
                         callback_data = f"c{callbackQuery.data[1:]}"
                     )
                 ]]
@@ -132,12 +132,12 @@ async def pdfDriver(bot, callbackQuery):
                 reply_markup = InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            "💁 UPLOADING 💁",
+                            "💁 تحميل 💁",
                             callback_data = f"{callbackQuery.data}"
                         )
                     ],[
                         InlineKeyboardButton(
-                            "🗑️ CANCEL 🗑️",
+                            "🗑️ الالغاء 🗑️",
                             callback_data = f"c{callbackQuery.data[1:]}"
                         )
                     ]]
@@ -153,7 +153,7 @@ async def pdfDriver(bot, callbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton(
-                        text = "♻️ SEARCH AGAIN ♻️",
+                        text = "♻️ ابحث مرة أخرى ♻️",
                         switch_inline_query_current_chat = ""
                     )
                 ]]
@@ -171,7 +171,7 @@ closeDRIVE = filters.create(lambda _, __, query: query.data.startswith("cD|"))
 async def close(bot, callbackQuery):
     try:
         if not (callbackQuery.from_user.id == int(callbackQuery.data.split("|")[2])):
-            return await callbackQuery.answer("message not for you..")
+            return await callbackQuery.answer("رسالة ليست لك..")
         
         await callbackQuery.answer("🗑️")
         await work(callbackQuery, "delete", False)
