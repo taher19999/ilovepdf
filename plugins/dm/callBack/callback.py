@@ -122,11 +122,11 @@ async def _common(bot, callbackQuery):
             
             return await bot.edit_inline_text(
                 callbackQuery.inline_message_id,
-                text = "set Language: 🌐\n\n"
-                       f"i ❤ PDF\nBot: @{myID[0].username}\n"
-                       "Update Channel: @ilovepdf_bot\n\n"
-                       f"`UPDATED: {time.strftime('%d:%B:%Y, %A')}`\n"
-                       f"`TIME: {time.strftime('%I:%M %p')}`",
+                text = "اختر اللغة: 🌐\n\n"
+                       f"i2 pdf\nBot: @{myID[0].username}\n"
+                       "قناة التحديثات: @i2pdfbotchannel\n\n"
+                       f"`التحديث: {time.strftime('%d:%B:%Y, %A')}`\n"
+                       f"`وقت: {time.strftime('%I:%M %p')}`",
                 reply_markup = BUTTON1
             )
         
