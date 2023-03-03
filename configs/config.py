@@ -43,16 +43,16 @@ class images(object):
     
     # DEFAULT THUMBNAIL ❌ NB: Thumbnails can’t be reused and can be only uploaded as a new file ❌
     PDF_THUMBNAIL = None                               #  "./images/thumbnail.jpeg"   PDF_THUMBNAIL & THUMBNAIL_URL must point same img
-    THUMBNAIL_URL = "https://te.legra.ph/I2pdfbotv4-03-03"   # to inc. meadia edit speed
+    THUMBNAIL_URL = "./images/I2pdfbot.png"   # to inc. meadia edit speed
     
     # WELCOME IMAGE
-    WELCOME_PIC = "https://te.legra.ph/I2pdfbotv4-03-03"
+    WELCOME_PIC = "./images/I2pdfbot.png"
     
     # BANNED IMAGE
-    BANNED_PIC = "https://te.legra.ph/I2pdfbotv4-03-03"
+    BANNED_PIC = "./images/I2pdfbot.png"
     
     # BIG FILE
-    BIG_FILE = "https://te.legra.ph/I2pdfbotv4-03-03"
+    BIG_FILE = "./images/I2pdfbot.png"
 
 
 class settings(object):
