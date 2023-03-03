@@ -24,25 +24,25 @@ async def lang_cb(inline_query) -> list:
         )
         answer = [
             InlineQueryResultPhoto(
-                photo_url = "https://te.legra.ph/file/780ae42b4f4b9cc96c1e9.jpg", reply_markup = BUTTON1,
+                photo_url = "https://ibb.co/4NZ8zYq", reply_markup = BUTTON1,
                 caption = CHUNK['capt'], description = CHUNK['des']
             ),
             InlineQueryResultPhoto(
-                photo_url = "https://te.legra.ph/file/0c146cd423cb762529240.jpg",
+                photo_url = "https://ibb.co/0Ks5X8F",
                 reply_markup = InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text = "♻️ SEARCH ♻️",
+                            text = "♻️ بحث ♻️",
                             switch_inline_query_current_chat = ""
                         ),
                         InlineKeyboardButton(
-                            text = "💖 SHARE SEARCH 💖",
+                            text = "💖 شارك البحث 💖",
                             switch_inline_query = ""
                         )
                     ]]
                 ),
-                caption = "__The ‘**♻️ SEARCH ♻️**’ option allows you to search for PDF files within the same chat__,\n\n"
-                          "__while the ‘**💖 SHARE SEARCH 💖**’ feature enables you to search for PDFs in a different chat__",
+                caption = "__ال ‘**♻️ بحث ♻️**’ هذا الاختيار يمكنك من بحث على كتب PDF في اي محادثة__,\n\n"
+                          "__وبينما ‘**💖 شارك البحث 💖**’ هذة الخاصية تمكنك من اختيار مكان البحث__",
             )
         ]
         
