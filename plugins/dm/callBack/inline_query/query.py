@@ -17,12 +17,12 @@ async def create_result(datas, query):
             title = f"{datas[i]['title']}",
             description = f"{datas[i]['span']}",
             id = f"{i}",
-            caption = f"**ID**: __{datas[i]['id']}__\n"
-                      f"**TITLE** : __{datas[i]['title']}__",
+            caption = f"**ايدي**: __{datas[i]['id']}__\n"
+                      f"**عنوان** : __{datas[i]['title']}__",
             reply_markup = InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton(
-                        text = "⚙️ Processing.. ",
+                        text = "⚙️ المعالجة.. ",
                         callback_data = f"nabilanavab"
                     ),
                 ]]
