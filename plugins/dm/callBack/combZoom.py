@@ -46,7 +46,7 @@ async def watermark(bot, callbackQuery):
             if checked == "encrypted":
                 await work(callbackQuery, "delete", False)
                 return await dlMSG.delete()
-       
+      
         with fitz.open(input_file) as iNPUT:
             with fitz.open() as oUTPUT:        # empty output PDF
                 if callbackQuery.data == "comb":
@@ -65,9 +65,10 @@ async def watermark(bot, callbackQuery):
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 4], iNPUT, pages.number)
                         # by all means, save new file using garbage collection and compression
-
-                elif callbackQuery.data == "comb1":
-                    for pages in iNPUT:
+   
+        with fitz.open(input_file) as iNPUT:
+            with fitz.open() as oUTPUT:        # empty output PDF
+                if callbackQuery.data == "comb":
                     width, height = fitz.paper_size("a4")
                     r = fitz.Rect(0, 0, width, height)
                     # define the 4 rectangles per page
@@ -81,7 +82,7 @@ async def watermark(bot, callbackQuery):
                             page = oUTPUT.new_page(-1, width = width, height = height)
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 2], iNPUT, pages.number)
-                        # by all means, save new file using garbage collection and compression                       
+                        # by all means, save new file using garbage collection and compression
                         
                 elif callbackQuery.data == "zoom":
                     for pages in iNPUT:
