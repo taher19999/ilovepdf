@@ -84,7 +84,7 @@ class settings(object):
     
     FEEDBACK = "https://t.me/i2pdfbotchannel/9?comment=1368"
     
-    SOURCE_CODE = "https://github.com/nabilanavab/iLovePDF"
+    SOURCE_CODE = "https://telegramic.org/bot/i2pdfbot/"
     
     OWNER_ID, OWNER_USERNAME = 5198110160, "nabilanavab"
     
