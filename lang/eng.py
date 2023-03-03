@@ -432,7 +432,7 @@ merge = {
     "inWork" : PROGRESS['workInP'],
     "process" : document['process'],
     "upload" : PROGRESS['upFile'],
-    "load" : "__بسبب التحميل الزائد، يمكنك دمج 5 ملفات PDF فقط في كل مرة__",
+    "load" : "__بسبب التحميل الزائد، يمكنك دمج 10 ملفات PDF فقط في كل مرة__",
     "sizeLoad" : "`بسبب التحميل الزائد، يدعم Bot فقط %sMb PDFs..", # removing %s show error
     "pyromodASK" : """__دمج pdfs » إجمالي ملفات PDF في قائمة الانتظار: {}__
 
