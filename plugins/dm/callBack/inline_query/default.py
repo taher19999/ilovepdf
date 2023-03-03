@@ -28,7 +28,7 @@ async def lang_cb(inline_query) -> list:
                 caption = CHUNK['capt'], description = CHUNK['des']
             ),
             InlineQueryResultPhoto(
-                photo_url = "https://www.raed.net/img?id=185635",
+                photo_url = "https://i.top4top.io/p_2618air4j1.png",
                 reply_markup = InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
