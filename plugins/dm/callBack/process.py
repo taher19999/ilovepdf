@@ -179,7 +179,7 @@ async def textPDF(callbackQuery, message, cDIR, lang_code):
                     if 1 <= len(pdfText) <= 1000:
                         try:
                             await callbackQuery.message.reply(
-                                f"```🅿🅰🅶🅴 : {pageNo}\n\n{pdfText}```\n@ilovepdf_bot", quote = pageNo==1
+                                f"```🅿🅰🅶🅴 : {pageNo}\n\n{pdfText}```\n@ta_ja199", quote = pageNo==1
                             )
                         except FloodWait as e:
                             await asyncio.sleep(e.value+1)
@@ -189,7 +189,7 @@ async def textPDF(callbackQuery, message, cDIR, lang_code):
                         for i, j in enumerate(slice, start=1):
                             try:
                                 await callbackQuery.message.reply(
-                                    f"```🅿🅰🅶🅴 : {pageNo}-{i}\n\n{j}```\n\n@ilovepdf_bot", quote = pageNo==1
+                                    f"```🅿🅰🅶🅴 : {pageNo}-{i}\n\n{j}```\n\n@ta_ja199", quote = pageNo==1
                                 )
                             except FloodWait as e:
                                 await asyncio.sleep(e.value+1)
