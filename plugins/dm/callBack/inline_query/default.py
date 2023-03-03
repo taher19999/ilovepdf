@@ -24,11 +24,11 @@ async def lang_cb(inline_query) -> list:
         )
         answer = [
             InlineQueryResultPhoto(
-                photo_url = "https://ibb.co/4NZ8zYq", reply_markup = BUTTON1,
+                photo_url = "https://d.top4top.io/p_2618bs5ga1.png", reply_markup = BUTTON1,
                 caption = CHUNK['capt'], description = CHUNK['des']
             ),
             InlineQueryResultPhoto(
-                photo_url = "https://ibb.co/0Ks5X8F",
+                photo_url = "https://www.raed.net/img?id=185635",
                 reply_markup = InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
