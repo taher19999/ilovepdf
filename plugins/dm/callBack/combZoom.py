@@ -65,10 +65,9 @@ async def watermark(bot, callbackQuery):
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 4], iNPUT, pages.number)
                         # by all means, save new file using garbage collection and compression
- 
-        with fitz.open(input_file) as iNPUT:
-            with fitz.open() as oUTPUT:        # empty output PDF
-                if callbackQuery.data == "comb1":
+
+                elif callbackQuery.data == "comb1":
+                    for pages in iNPUT:
                     width, height = fitz.paper_size("a4")
                     r = fitz.Rect(0, 0, width, height)
                     # define the 4 rectangles per page
@@ -83,7 +82,7 @@ async def watermark(bot, callbackQuery):
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 2], iNPUT, pages.number)
                         # by all means, save new file using garbage collection and compression                       
-
+                        
                 elif callbackQuery.data == "zoom":
                     for pages in iNPUT:
                         r  = pages.rect
