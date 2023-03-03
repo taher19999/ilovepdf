@@ -46,7 +46,7 @@ async def _split(bot, callbackQuery):
             i += 1
             needPages = await bot.ask(
                 text = CHUNK["pyromodASK_1"], chat_id = callbackQuery.message.chat.id, reply_to_message_id = callbackQuery.message.id,
-                filters = filters.text, reply_markup = ForceReply(True, "Eg: 7:86 [start:end] | 7, 8 ,6 [pages]")
+                filters = filters.text, reply_markup = ForceReply(True, "مثال: 7:86 [بداية:نهاية] | 7, 8 ,6 [الصفحات]")
             )
             # IF /exit PROCESS CANCEL
             if needPages.text == "/exit":
@@ -196,7 +196,7 @@ async def _split(bot, callbackQuery):
             if data.startswith("S"):
                 caption = f"{newList}"
             else:
-                caption = f"from `{pageStartAndEnd[0]}` to `{pageStartAndEnd[1]}`"
+                caption = f"من `{pageStartAndEnd[0]}` الى `{pageStartAndEnd[1]}`\nfrom `{pageStartAndEnd[0]}` to `{pageStartAndEnd[1]}`"
             await callbackQuery.message.reply_document(
                 file_name = FILE_NAME, thumb = THUMBNAIL, quote = True, document = output_file,
                 caption = f"{caption}\n\n{FILE_CAPT}", progress = uploadProgress,
