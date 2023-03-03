@@ -53,7 +53,7 @@ async def _extract(bot, callbackQuery):
                 needPages = await bot.ask(
                     chat_id = chat_id, text = CHUNK["pyromodASK_1"],
                     reply_to_message_id = callbackQuery.message.id, filters = filters.text,
-                    reply_markup = ForceReply(True, "Eg: 7:86 [start:end]")
+                    reply_markup = ForceReply(True, "مثال: 7:86 [بداية:نهاية]")
                 )   # PYROMOD ADD-ON (PG NO REQUEST)
                 if needPages.text == "/exit":    # EXIT PROCESS
                     await needPages.reply_text(CHUNK["exit"], quote = True); break
@@ -93,7 +93,7 @@ async def _extract(bot, callbackQuery):
                 i += 1
                 needPages = await bot.ask(
                     text = CHUNK["pyromodASK_2"], chat_id = chat_id, reply_to_message_id = callbackQuery.message.id,
-                    filters = filters.text, reply_markup = ForceReply(True, "Eg: 7,8,6 [pages]")
+                    filters = filters.text, reply_markup = ForceReply(True, "مثال: 7,8,6 [الصفحات]")
                 )
                 if needPages.text == "/exit":    # PROCESS CANCEL
                     await needPages.reply(CHUNK["exit"], quote = True)
