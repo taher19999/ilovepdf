@@ -11,7 +11,7 @@ from configs.config import images
 from plugins.fncta import thumbName, formatThumb
 from pyrogram import enums, filters, Client as ILovePDF
 
-CZ = filters.create(lambda _, __, query: query.data.startswith(tuple(["comb","comb1","zoom", "draw"])))
+CZ = filters.create(lambda _, __, query: query.data.startswith(tuple(["comb","comb2", "zoom", "draw"])))
 
 @ILovePDF.on_callback_query(CZ)
 async def watermark(bot, callbackQuery):
@@ -46,7 +46,7 @@ async def watermark(bot, callbackQuery):
             if checked == "encrypted":
                 await work(callbackQuery, "delete", False)
                 return await dlMSG.delete()
-      
+        
         with fitz.open(input_file) as iNPUT:
             with fitz.open() as oUTPUT:        # empty output PDF
                 if callbackQuery.data == "comb":
@@ -65,16 +65,12 @@ async def watermark(bot, callbackQuery):
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 4], iNPUT, pages.number)
                         # by all means, save new file using garbage collection and compression
-   
-        with fitz.open(input_file) as iNPUT:
-            with fitz.open() as oUTPUT:        # empty output PDF
-                if callbackQuery.data == "comb":
+                elif callbackQuery.data == "comb2":
                     width, height = fitz.paper_size("a4")
                     r = fitz.Rect(0, 0, width, height)
                     # define the 4 rectangles per page
                     r1 = r / 2 # top left rect
-                    r3 = r1 + (0, r1.height, 0, r1.height) # bottom left
-                    r4 = fitz.Rect(r1.br, r.br) # bottom right
+                    r3 = r1 + (0, r1.height, 0, r1.height)
                     r_tab = [r1,r3]
                     # now copy input pages to output
                     for pages in iNPUT:
@@ -82,8 +78,7 @@ async def watermark(bot, callbackQuery):
                             page = oUTPUT.new_page(-1, width = width, height = height)
                         # insert input page into the correct rectangle
                         page.show_pdf_page(r_tab[pages.number % 2], iNPUT, pages.number)
-                        # by all means, save new file using garbage collection and compression
-                        
+                        # by all means, save new file using garbage collection and compression                
                 elif callbackQuery.data == "zoom":
                     for pages in iNPUT:
                         r  = pages.rect
