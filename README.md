@@ -1,6 +1,6 @@
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Telegram Pdf Bot">
+  <meta name="description" content="Telegram Pdf Bot i2pdf">
   <meta name="keywords" content="Telegram, pdf, bot, pdfbot, ilovepdf, nabilanavab">
   <meta name="author" content="Nabil A Navab">
 </head>
