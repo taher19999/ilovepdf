@@ -7,7 +7,6 @@ file_name = "ILovePDF/lang/eng.py"
 from configs.config   import settings
 
 
-
 _CLOSE = "🚶 اغلاق 🚶"
 _RESTART = "☠ `𝐎𝐕𝐄𝐑𝐋𝐎𝐀𝐃 𝐃𝐄𝐂𝐓𝐄𝐂𝐓𝐄𝐃`☠:\n__𝐬𝐞𝐫𝐯𝐞𝐫 𝐫𝐞𝐬𝐭𝐚𝐫𝐭𝐞𝐝__\n\n لقد لاحظت أن عملك كان أيضًا في قائمة الانتظار\n\n هل يمكنك المحاولة مرة أخرى ..!"
 _STOP = "مرحبًا {}!\n إن {} هنا لجعل حياتك أسهل ،\n\n` ولكن للأسف ، هناك حاليًا بعض الصيانة من جانب الخادم.\n\n__ لا داعي للقلق ، على الرغم من ذلك ، فقط انقر فوق الزر أدناه ، وسأخبرك بمجرد إعادة تشغيله بسلاسة .__ "
@@ -103,150 +102,154 @@ _P2I = "🖼 IMG 🖼"
 _P2D = "📂 DOC 📂"
 _P2Z = "🤐 ZIP 🤐"
 _P2T = "🎯 TAR 🎯"
-_ALL = "🙄 الكل 🙄"
-_CUSTOM = "🤧 مخصص 🤧"
-_B_ROTATE = "⚙️ PDF »تدوير ↓"
-_B_TEXT = "⚙️ PDF »نص ↓"
-_B_TEXT_M = "📜 رسالة 📜"
-_B_WATERMARK = "⚙️ PDF »علامة مائية"
-_B_TEXT_T = "💬 نَص 💬"
+_ALL = "🙄 ALL 🙄"
+_CUSTOM = "🤧 CUSTOM 🤧"
+_B_ROTATE = "⚙️ PDF » ROTATE ↓"
+_B_TEXT = "⚙️ PDF » TXT ↓"
+_B_TEXT_M = "📜 MESSAGE 📜"
+_B_WATERMARK = "⚙️ PDF » WATERMARK ↓"
+_B_TEXT_T = "💬 TEXT 💬"
 _B_PDF = "📎 PDF 📎"
-_WATER_OP = "⚙️ PDF »علامة مائية» {} »الشفافية ↓"
-_WATER_PO = "⚙️ PDF »علامة مائية» موقع العلامة المائية"
-_TOP = "⬆️ الأعلي ⬆️"
-_MIDDLE = "↔️ المنتصف ↔️"
-_BOTTOM = "⬇️ الأسفل ⬇️"
-_WATER_COLOR = "⚙️ PDF »علامة مائية» اللون ↓"
-_B_STAMP = "⚙️ PDF »طابِع ↓"
-_STAMP_COLOR = "⚙️ PDF »طابِع» اللون ↓"
-_PROGRESS = "n ** تم ✅: ** {0} / {1}\n ** السرعة 🚀: ** {2} / ثانية\n ** الوقت المقدر ⏳: ** {3}"
-_UPLOADING = "جارِ التحميل"
-_CANCEL = "🎯 إلغاء 🎯"
-_NO_QUEUE = " لم يتم العثور على قائمة انتظار ... "
-_NO_IMG = "لم يتم العثور على صورة. !! 😒"
-_DL_IMG = "تم تنزيل {} الصور 🥱"
-_GEN_PDF = "اسم الملف: '{} `\n الصفحات:` {} `"
-_REN_PDF = "الآن أرسل اسم ملف:"
-_DLT_QUEUE = " تم حذف قائمة الإنتظار بنجاح ..`🤧"
-_GEN_CB = "📚 إنشاء ملفات PDF .."
-_AIO = "😏 الكل في واحد 😏"
-_SINGLE_USE = "😎 الاستخدام الفردي 😎"
-_START_UPLOAD = " بدأ الرفع .. "
-_START_DOWNL = " تحميل ملفك ..  📥"
-_PROCESSING = "⚙️ المعالجة .."
-_W_I_P = "التقدم في العمل .. 🙇"
-_DL_IMG = "تحميل صورتك ..⏳`"
-_TAKE_TIME = "   ⚙️ جاري العمل ..\n قد يستغرق بعض الوقت ..   "
-_CONVERT = "`تم تحويلة: {} إلى {}`"
-_UNSUPPORT = "ملف غير مدعوم ..🙄`"
-_ADMIN_ONLY = "بسبب بعض قيود تيليجرام ..\n\n لا يمكنني العمل إلا كمسؤول\n__ الرجاء ترقيتي كمسؤول__ ☺️"
-_NOT_DOC = "الرجاء الرد علي ملف او صورة / انظر .. رسالتك الحاليه ليست ردا علي ملف  ..🤧"
-_G_ADMIN = "يمكن فقط لمسؤولي المجموعة استخدام هذا البوت\n تعال مرة أخرى إلى الخاص 😋"
-_NOT_YOUR = " يمكن للمسؤولين فقط القيام بذلك ... \n\nاو جرّب علي ملفات ال pdf خاصتك  (__ الرد على رسالتك__)"
-_WASTE = " لا أحد سيساعدك  😏"
-_GENERATE ="📚 انشاء 📚"
-_HD = "الآن تحويل الصور إلي PDF في اعلي جودة😈"
-_BACK_DEFAULT = "   الرجوع  للجودة الافتراضية"
-_NO_API = "`الرجاء إضافة تحويل API .. 💩\n\n ابدأ» إعدادات »api» إضافة / تغيير`"
-_ERROR = "حدث خطأ ما .. 🐉\n\n الخطأ: `{}`"
-_NOT_DOKR = " الملف غير مدعوم ، انشر البوت باستخدام الdocker  "
-_BIG = "بسبب التحميل الزائد ، حدود المالك {} ميغابايت لملفات pdf 🙇\n\n` الرجاء إرسال ملف أقل من {} ميغابايت الحجم` 🙃"
-_BIG_SUPP = "💎 إنشاء بوت دعم 2 جيجا بايت 💎"
-_IMG_ADDED = " تمت إضافة {} من الصفحات إلى ملف PDF ..`🤓\n\n اسم الملف:` {} .pdf`"
-_TRUE = "✅ صحيح ✅"
-_FALSE = "🔴 خطأ 🔴"
-_PASS_REQUIRED = "هل يتطلب ملف PDF كلمة مرور لفتحه.؟ اسم الملف: `{}`\n حجم الملف: `{}`"
-_YES = "✅ نعم ✅"
-_NO = "🔴 لا 🔴"
-_MOVE = "⏭ تحريك ⏭"
-_WAIT_TXT = "ارسل لي الآن أي رسالة نصية .. 😪"
-_AIO_QN = "`ماذا علي أن أفعل بهذا الملف .؟`🤔💭\n\nInput:\n	 اسم الملف:` {} `n \ t حجم الملف:` {} `n \ t كلمة المرور: || • {} • | |\n\n الإخراج:\n \ t اسم الملف: `• {} •`\n \ t العلامة المائية: `• {} •`\n \ t كلمة المرور: || • {} • ||"
-_PROCEED = "🆗 عملية 🆗"
-_EXIT = " تم انهاء العملية ...  😏"
-_NOTHING = "لا شيء لإنشاءه .. 😏"
-_TEXT2PDF = " يمكنك الآن إنشاء ملف PDF من الرسائل النصية .. ذهول .. صحيح ..؟ 😲\n\n للبدء ، ما عليك سوى تحديد الخيار أدناه وتخصيص التنسيق الخاص بك لجعل ملف PDF الخاص بك يبدو في أفضل حالاته .. 😎😏` "
-_TEXT2PDF_S = "بدأ في تحويل txt إلى Pdf.."
-_TEXT2PDF_T = "__TEXT TO PDF» الآن ، يرجى إدخال العنوان: __ \n\n/exit __ لإلغاء __ \n/skip __لتخطي__ "
-_TEXT2PDF_P = "__TEXT TO PDF» الآن ، الرجاء إدخال فقرة {}: __ \n\n/exit __ لإلغاء __ \n/create __لنصنع او لنبتكر__ "
-_GET_TG_PDF = "🧭 الحصول على ملف PDF"
-_DONE = "   انتهى تقريبا .. ✅\n الآن ، بدأ الرفع .. 📤```"
-_TEXT_REPLY = "أرسل لي أي رابط أو روابط pdf مباشرة"
-_TG_PDF = "[فتح الدردشة] ({})\n\n ** حول الدردشة ↓ **\n نوع الدردشة: {}\n اسم الدردشة: {}\n الدردشة معنا: @ {}\n معرف الدردشة: {}\n التاريخ: {}\n ** حول الوسائط ↓ **\n الوسائط: {}\n اسم الملف: {}\n حجم الملف: {}\n نوع الملف: {}"
-_CHECK = "انتظر .. اتركني  .. 😜"
-_DOWNLOADING = "جارى التحميل"
-_COMPLETED = "😎 مكتمل 😎"
-_NOT_DEV = "هذه الميزة قيد التطوير ⛷️"
-_STILL_ERROR = "خطأ آن بارانجيل .. ثم ماذا .. 😏"
-_CANCELED = "قد تم الغاء العملية .. 😏"
-_NOT_ENCRYPT = "الملف غير مشفر .. 👀"
-_NOTHING_OFF = "ا شيء رسمي عن ذلك .. 😅"
-_SEARCH = "️♻️ بحث ♻️"
-_OPEN_BOT = "😇 فتح في البوت 😇"
-_TOTAL = "إجمالي {} النتائج .."
-_LANG = "تساعد في ضبط لغتك المريحة 😇"
-_SEARCH_PDF = "ابحث عن ملف PDF 🔍"
-_SEARCH_DES = "تستطيع الآن البحث خلال مكتبة ضخمة من الملفات والوثائق بكل سهوله ويسر ،بكتابه اسم الملف الذي تبحث عنه في وضع البحث المضمن "
-_MIN_SEARCH = "🔎 اكتب للبحث عن ملفات PDF .."
-_NO_RESULT = "🤐 لا توجد نتائج عن   {} "
-_GET_PDF = "⚔ احصل على PDF"
-_OLD_QUEUE = "قائمة الانتظار قديمة .. جرب واحدة جديدة .. 🙄"
-_INLINE_CAP = "MD5: {}\n العنوان: ** {}. **\n المؤلف: ** {}. **\n\n المجلد: {}\n السنة: {}\n الصفحات: {}\n اللغة: {}\n الناشر: {}"
-_INLINE_DES = "المؤلف: {}\n المجلد: {} السنة: {} الصفحات: {}\n اللغة: {} الإضافة: {}\n الناشر: {}"
-_DL_COMPLETED = " اكتمل التنزيل ...  ✅\n\n    بدأ في المعالجة\n قد يستغرق بعض الوقت ...    🙇📝"
-_PASS_ERROR = "عذرًا ، كلمة المرور هذه غير صالحة لفك تشفير ملف PDF"
-_CANT_COMP = "غير قادر على ضغط أكثر 🙂"
-_ASK_NAME = "أدخل اسمًا جديدًا لـ PDF:\n\n/exit خروج "
-_ASK_MERGE = "__MERGE pdfs »إجمالي ملفات PDF في قائمة الانتظار: {}\n\n /exit الخروج \n/merge الدمج "
-_ASK_PASS = "_PDF {} »n الآن ، الرجاء إدخال كلمة المرور: __\n\n/exit __ خروج __ "
-_ASK_PG = "من فضلك ادخل الجملة التي تريد استخدامها في صفحة الPDF ،\n\n بناء الجملة:\n\t نطاق الصفحة: `[البداية ، النهاية]` ،\n \ t صفحة محددة: `مفصولة بفواصل`.\n\n مثال:  1،3،5،12: 19 "
-_ASK_PG_ERROR = "`بناء جملة غير صالح لرقم الصفحة`\n` NB: يحتوي ملف Pdf على {} صفحات` ⭐ فقط.\n\n الرجاء إدخال بناء جملة صالح لرقم الصفحة ،\n مثل` [البداية: النهاية] `أو` [أرقام الصفحة] ` ."
-_MORE_PGS = "يحتوي علي عدد كبير جداً من الصفحات ،من فضلك ارسل ملف PDF يحتوي علي اقل من 5 صفحات 😐"
-_YOUR_ERROR = "لديك مشكلة كبيرة ..🙂"
-_OWN_RES = "المالك مقيد 😎🤏"
-_ENCRYPT_CAPT = "__ رقم الصفحة__: {}\n__ مفتاح__ 🔐: || {} ||"
-_RENAME_CAPT = "الاسم القديم: `{}`\n الاسم الجديد: `{}`"
-_COMP_CAPT = "حجم الملف القديم: `{}`\n حجم الملف الجديد: `{}`\n النسبة: `{}`٪"
-_COMPLETED_SUCC = "تم بنجاح. 😎"
-_CANCELED_CB = "🍄 تم الإلغاء 🍄"
-_TOTAL_PG = "`إجمالي الصفحات: {} .. ⏳`"
-_CANCEL_AT = " تم الإلغاء عند {} / {} من الصفحات ..` 🙄"
-_UPLOADING_AL = " تحميل: {} / {} صفحات .. 🐬`"
-_SIZE_LOAD = " بسبب التحميل الزائد ، يدعم فقط٪ sMb PDFs .."
-_MERGE_DL = "`تنزيل {}`"
-_START_MERGE = "`بدأ في الدمج {} pdfs`"
-_WATERMARK_TXT = "__ الآن ، أرسل لي رسالة نصية __\n\n/exit رجوع: "
-_WATERMARK_PDF = "__ أرسل لي العلامة المائية pdf .__\n\n/exit رجوع: "
-_WATERMARK_IMG = "__ أرسل لي صورة العلامة المائية كملف __\n__ الملفات المدعومة [png ، jpeg ، jpg] __\n\n/exit خروج: "
-_ADD_WATERMARK = "إضافة علامة مائية إلى ملف PDF 😎"
-_READ_AGAIN = "الرجاء قراءة هذه الرسالة مرة أخرى .. 🥴😲"
-_ZIP_CONVERT = " تم تحويلة {} / {}`"
-_GENERATING = " 🔗 إنشاء ... "
-_UNKNOWN_ERROR = "للأسف ، واجهنا خطأ 😓"
-_NOTIFY = "احصل على إشعار عندما يقوم شخص ما بإحضار ملف pdf هذا"
-_URL_PROCES = "   🔗 جارٍ الإنشاء ..\n نحن نعمل على ذلك!\n\n يُرجى الانتظار لحظة حتى تكتمل المعالجة.  "
-_URL_TYPE = " 🔗 إنشاء ... \n\n ** عام ** 📢:\n__ سيكون الملف متاحاً للعامه للوصول إليه من هذا الرابط ،مما يجعل اي شخص قادراً علي حفظ واعادة توجيه الملف __.\n\n ** حماية ** 🔐:\n__ ضمانات سرية الرسالة من خلال منع إعادة توجيهها وحفظها _."
-_NOTIFY_CB = "🔔 إشعار 🔔"
-_MUTE_CB = "🔕 كتم الصوت 🔕"
-_PUBLIC = "📢 العامة 📢"
-_PRIVATE = "🔐 خاص 🔐"
-_GEN_LINK = "**ها هو! هذا ما كنت تبحث عنه .. **"
-_ERROR_ = "للأسف ، يبدو أنه حدث خطأ ما. يرجى المحاولة لاحقًا.\n\n` الخطأ: `{}"
-_AIO_PROCESS = "```{} العمل قيد التقدم ..🔰 \n قد يستغرق الأمر بعض الوقت .. 💔```"
-_VIEW_ONLY = "تم تقييد الرابط للعرض فقط .. 👀"
-_REFER_T = "🎁 رابط الإحالة 🎁"
-_REFER_D = "ادعُ صديقك .."
-_CLICK_RIGHT = "انقر فوق زر الجانب الأيمن للتحديد. 👉"
-_REFER = "يرجى إحالة ما لا يقل عن 5 مستخدمين جدد لاستخدام هذا البوت 😑 \n\nYOUR REFERRAL LINK: {}"
-_NOW_BETA = "أنت الآن مستخدم تجريبي .. ☺"
-_NOW_NOT_BETA = "الآن أنت لست جزءًا في الاختبار التجريبي .. 😐"
-_BETA_MSG = "🍄 انضم إلى الإصدار التجريبي [مجانًا] 🍄"
-_BETA_MESSAGE= "🔰 أنضم إلي برنامجنا التجريبي 🔰\nقُم بإحالة أصدقاءك وكن جزءاً من الإصدار التجريبي ، وافتح الوصول الحصري للتعامل مع المهام المتعددة بسهولة.  رابط الإحالة الخاص بك .\n\n🎀 __بمجرد إنشاء رابط الإحاله .\n🎀 أدعُ 5 اصدقاء من خلاله .\n🎀 بعد احالتك 5 اصدقاء ارسل الأمر /beta.\n🎀 اختيار' الكل في واحد ' سيكون متاحا عند ارسال او توجيه ملف PDF .\n🎀 استمتع بالإمكانيات المحسنة لأداء مهام متعدده في عملية واحده بسلاسه ويسر.\n\nرابط الإحالة الخاص بك  : {}\nمشاركة الرابط : [أضغط هنا]({})"
-_SELECT_SCALE = "🖼 تحديد النطاق 🖼"
-_SELECT_HEAD_FONT = "✒ تحديد خط العنوان ✒"
-_SELECT_PARA_FONT = "🪂 تحديد خط الفقرة 🪂"
-_SELECT_COLOR = "🎨 حدد اللون 🎨"
-_USE_DEFAULT = "» استخدام الافتراضي »"
-_SELECT_BG_COLOR = "🎨 حدد صورة الخلفية 🎨"
+_WATER_OP = "⚙️ PDF » WATERMARK » {} » OPCACiTY ↓"
+_WATER_PO = "⚙️ PDF » WATERMARK » POSiTiON ↓"
+_TOP = "⬆️ ToP ⬆️"
+_MIDDLE = "↔️ MiDDLE ↔️"
+_BOTTOM = "⬇️ BoTToM ⬇️"
+_WATER_COLOR = "⚙️ PDF » WATERMARK » CoLoR ↓"
+_B_STAMP = "⚙️ PDF » STAMP ↓"
+_STAMP_COLOR = "⚙️ PDF » STAMP » COLOR ↓"
+_PROGRESS = "\n**Done ✅ : **{0}/{1}\n**Speed 🚀:** {2}/s\n**Estimated Time ⏳:** {3}"
+_UPLOADING = "UPLOADING"
+_CANCEL = "🎯 CANCEL 🎯"
+_NO_QUEUE = "`No Queue found..`😲"
+_NO_IMG = "No image found.!! 😒"
+_DL_IMG = "Downloaded {} Images 🥱"
+_GEN_PDF = "File Name: `{}`\nPages: `{}`"
+_REN_PDF = "Now Send Me a File Name 😒: "
+_DLT_QUEUE = "`Queue deleted Successfully..`🤧"
+_GEN_CB = "📚 GENERATING PDF.."
+_AIO = "😏 ALL IN ONE 😏"
+_SINGLE_USE = "😎 SINGLE USE 😎"
+_START_UPLOAD = "`Started Uploading..`📤"
+_START_DOWNL = "`Downloading your file..` 📥"
+_PROCESSING = "⚙️ Processing.."
+_W_I_P = "WORK IN PROGRESS.. 🙇"
+_DL_IMG = "`Downloading your Image..⏳`"
+_TAKE_TIME = "```⚙️ Work in Progress..\nIt might take some time..```💛"
+_CONVERT = "`Converted: {} to {}`"
+_UNSUPPORT = "Unsupported file..🙄`"
+_ADMIN_ONLY = "Due to Some Telegram Limits..\n\nI can only work as an admin\n__Please promote me as admin__ ☺️"
+_NOT_DOC = "Broh Please Reply to a Document or an Image..🤧"
+_G_ADMIN = "Only Group Admins Can Use This Bot\nElse Come to my Pm 😋"
+_NOT_YOUR = "`Only admins can do it..`\n\nOr try on your pdfs(__reply to your message__)"
+_WASTE = "`No one gonna help you` 😏"
+_GENERATE ="📚 GENERATE 📚"
+_HD = "Now Image To PDF is in HD mode 😈"
+_BACK_DEFAULT = "« Back to Default Quality «"
+_NO_API = "`Please add convert API.. 💩\n\nstart » settings » api » add/change`"
+_ERROR = "SOMETHING went WRONG.. 🐉\n\nERROR: `{}`"
+_NOT_DOKR = "`File Not Supported, deploy bot using docker`"
+_BIG = "Due to Overload, Owner limits {}mb for pdf files 🙇\n\n`please Send me a file less than {}mb Size` 🙃"
+_BIG_SUPP = "💎 Create 2Gb Support Bot 💎"
+_IMG_ADDED = "`Added {} pages to your PDF..`🤓\n\nfileName: `{}.pdf`"
+_TRUE = "✅ TRUE ✅"
+_FALSE = "🔴 FALSE 🔴"
+_PASS_REQUIRED = "Does the PDF file require a password to open.?🤔💭\n\nFile Name : `{}`\nFile Size : `{}`"
+_YES = "✅ YES ✅"
+_NO = "🔴 NO 🔴"
+_MOVE = "⏭ MOVE ⏭"
+_WAIT_TXT = "Now send me any text message.. 😪"
+_AIO_QN = "`What should I do with this file.?`🤔💭\n\nInput:\n\tFile Name : `{}`\n\tFile Size   : `{}`\n\tPassword : ||•{}•||\n\nOutput:\n\tFile Name   : `•{}•`\n\tWatermark : `•{}•`\n\tPassword    : ||•{}•||"
+_PROCEED = "🆗 PROCESS 🆗"
+_EXIT = "`Process Cancelled..` 😏"
+_NOTHING = "Nothing to create.. 😏"
+_TEXT2PDF = "`You can now create PDF from text messages.. Mind-blown.. right..? 😲\n\nTo get started, just select the option below and customize your layout to make your PDF look its best.. 😎😏`"
+_TEXT2PDF_S = "Started Converting txt to Pdf..🎉"
+_TEXT2PDF_T = "__TEXT TO PDF » Now, please enter a TITLE:__\n\n/exit __to cancel__\n/skip __to skip__"
+_TEXT2PDF_P = "__TEXT TO PDF » Now, please enter paragraph {}:__\n\n/exit __to cancel__\n/create __to create__"
+_GET_TG_PDF = "🧭 Get PDF File 🧭"
+_DONE = "```Almost Done.. ✅\nNow, Started Uploading.. 📤```"
+_TEXT_REPLY = "send me any url or direct telegram pdf links"
+_TG_PDF = "[Open Chat]({})\n\n**ABOUT CHAT ↓**\nChat Type   : {}\nChat Name : {}\nChat Usr    : @{}\nChat ID        : {}\nDate : {}\n**ABOUT MEDIA ↓**\nMedia       : {}\nFile Name : {}\nFile Size   : {}\nFile Type : {}"
+_CHECK = "Wait.. Let me.. 😜"
+_DOWNLOADING = "DOWNLOADING"
+_COMPLETED = "😎 COMPLETED 😎"
+_NOT_DEV = "This feature is Under Development ⛷️"
+_STILL_ERROR = "Error annenn paranjille.. then what.. 😏"
+_CANCELED = "Process Canceled.. 😏"
+_NOT_ENCRYPT = "File Not Encrypted.. 👀"
+_NOTHING_OFF = "Nothing Official About it.. 😅"
+_SEARCH = "️♻️ SEARCH ♻️"
+_OPEN_BOT = "😇 open in bot 😇"
+_TOTAL = "The query search yielded {} results.. 🎁"
+_LANG = "help's to set your comfortable language 😇"
+_SEARCH_PDF = "🔎 SEARCH PDF 🔎"
+_SEARCH_DES = "You can now search through a vast library of PDF documents with ease and convenience. Using the inline search mode, you can simply type in the name of the document that you are looking for"
+_MIN_SEARCH = "🔎 Type to search PDF Files.."
+_NO_RESULT = "🤐 No results for '{}'"
+_GET_PDF = "⚔ GET PDF ⚔"
+_OLD_QUEUE = "Old Queue.. Try New One.. 🙄"
+_INLINE_CAP = "MD5: {}\nTitle: **{}.**\nAuthor: **{}.**\n\nVolume: {}\nYear: {}\nPages: {}\nLanguage: {}\nPublisher: {}"
+_INLINE_DES = "Author: {}\nVolume: {}   Year: {}  Pages: {}\nLanguage: {}  Extension: {}\nPublisher: {}"
+_DL_COMPLETED = "`Downloading Completed..` ✅\n\n```Started Processing\nIt might take some time..``` 🙇📝"
+_PASS_ERROR = "Sorry, this password is invalid for decrypting the PDF file"
+_CANT_COMP = "cant compress more 🙂"
+_ASK_NAME = "Enter PDF new Name:\n\n/exit to cancel"
+_ASK_MERGE = "__MERGE pdfs » Total PDFs in queue: {}\n\n/exit to cancel\n/merge to merge__"
+_ASK_PASS = "_PDF {} »\nNow, please enter the PASSWORD :__\n\n/exit __to cancel__"
+_ASK_PG_ = "Please enter the PDF page syntax that you would like to use,\n\nSyntax:\n\tRange of page: `[start, end]`,\n\tSpecific page: `separated by commas`.\n\nExample: `1,3,5,12:19`"
+_ASK_PG_ERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nPlease enter a valid syntax for the page number,\nsuch as `[start:end]` or `[page_numbers]`."
+_MORE_PGS = "It contains too many pages, send me a pdf fewer than 5 pages 😐"
+_YOUR_ERROR = "You have some big problem..🙂"
+_OWN_RES = "Owner Restricted 😎🤏"
+_ENCRYPT_CAPT = "__Page Number__: {}\n__key__ 🔐: ||{}||"
+_RENAME_CAPT = "old name: `{}`\nnew name: `{}`"
+_COMP_CAPT = "Old File Size: `{}`\nNew File size: `{}`\nRatio: `{}`%"
+_COMPLETED_SUCC = "Completed Successfully. 😎"
+_CANCELED_CB = "🍄 CANCELLED 🍄"
+_TOTAL_PG = "`Total pages: {}..⏳`"
+_CANCEL_AT = "`Canceled at {}/{} pages..` 🙄"
+_UPLOADING_AL = "`Uploading: {}/{} pages.. 🐬`"
+_SIZE_LOAD = "`Due to Overload Bot Only Support %sMb PDFs.."
+_MERGE_DL = "`Downloadeding {}`"
+_START_MERGE = "`started merging {} pdfs`"
+_WATERMARK_TXT = "__Now, Send me a Text Message__\n\n/exit : to cancel"
+_WATERMARK_PDF = "__Send me the watermark pdf.__\n\n/exit : to cancel"
+_WATERMARK_IMG = "__Send me the watermark Image as file__\n__ Supported Files [png, jpeg, jpg]__\n\n/exit : to cancel"
+_ADD_WATERMARK = "Adding Watermark to PDF File 😎"
+_READ_AGAIN = "please read this message again.. 🥴😲"
+_ZIP_CONVERT = "`converted {}/{}` 😎"
+_GENERATING = "`🔗 Generating..`"
+_UNKNOWN_ERROR = "Unfortunately, we encountered an error 😓"
+_NOTIFY = "Get Notify when a someone fetch this pdf"
+_URL_PROCES = "```🔗 Generating..\nWe're working on it!\n\nPlease allow a moment for the processing to complete.```"
+_URL_TYPE = "`🔗 Generating..`\n\n**Public** 📢:\n__The file accessed via this link will be publicly available, allowing anyone to save and forward it__.\n\n**Protect** 🔐:\n__Ensures the confidentiality of the message by preventing its forwarding and saving__."
+_NOTIFY_CB = "🔔 NOTIFY 🔔"
+_MUTE_CB = "🔕 MUTE 🔕"
+_PUBLIC = "📢 PUBLIC 📢"
+_PRIVATE = "🔐 PRIVATE 🔐"
+_GEN_LINK = "**Here it is! This is what you were searching for..**"
+_ERROR_ = "Oops, it looks like something went wrong. Please try again later.\n\n`ERROR:` {}"
+_AIO_PROCESS = "```{} work in progress..🔰\nwait it might take some time.. 💔```"
+_VIEW_ONLY = "The link has restricted view access only.. 👀"
+_REFER_T = "🎁 REFERAL LINK 🎁"
+_REFER_D = "Refer Your Friend.. "
+_CLICK_RIGHT = "Clic Right Side Button to Select. 👉"
+_REFER = "Invited : {} Users.!\nPlease refer a minimum of 5 new users to utilize this bot ☺\n\nYOUR REFERAL LINK : {}"
+_NOW_BETA = "`Now you are a beta user..` ☺"
+_NOW_NOT_BETA = "`Now you are not part in beta test..` 😐"
+_BETA_MSG = "🍄 JOIN BETA [FREE] 🍄"
+_BETA_MESSAGE = "**🔰 Join our Beta Program 🔰**\n__Refer your friends and become a part of the beta version, unlocking exclusive access to effortlessly handle multiple tasks with ease.__\n\n🎀 __Once you Generate your referral link.__\n🎀 __Invite 5 friends to join using this referral link.__\n🎀 __Once you've successfully referred 5 friends, send /beta command.__\n🎀 The 'All-in-One' option will now be available when sending or forwarding a PDF.\n🎀 Enjoy the enhanced capabilities of performing multiple tasks seamlessly in a single process.\n\n**__YOUR REFERAL LINK :__** {}\n**__SHARE LINK__ : [Click Here]({})**"
+_SELECT_SCALE = "🖼 SELECT SCALE 🖼"
+_SELECT_HEAD_FONT = "✒ Select Heading Font ✒"
+_SELECT_PARA_FONT = "🪂 Select Paragraph Font 🪂"
+_SELECT_COLOR = "🎨 Select Color 🎨"
+_USE_DEFAULT = "» Use Default »"
+_SELECT_BG_COLOR = "🎨 Select Background Image 🎨"
+_ASK_PG = "Now, please enter the number.\n\n🤠 If you enter an integer, the PDF will be split into parts, each consisting of that number of pages.\n🤠 If you enter a colon (:) followed by a number, the PDF will be split into parts, each consisting of that specified number of pages.\n\n/exit to cancel"
+_ASK_PGERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nError: `{}`"
+_PART_PDF = "🍑 PART PDF 🍑"
+_REMOVE_LINKS = "🔏 REMOVE LINKS 🔏"
 
 
 
