@@ -15,7 +15,7 @@ _SETTINGS = "⚙️ الإعدادات ⚙️"
 _LANGUAGE = "🌍 اللغة 🌍"
 _HELP = "📚 مساعدة 📚"
 _CHANNEL = "📢 القناة 📢"
-_SOURCE = "🌟 رمز المصدر 🌟"
+_SOURCE = "🌟 rate bot 🌟"
 _ADD_GROUP = "➕ أضف في المجموعة ➕"
 _THUMB = "الصورة المصغرة"
 _NAME = "الاسم"
@@ -199,53 +199,53 @@ _ASK_MERGE = "__MERGE pdfs »إجمالي ملفات PDF في قائمة الا�
 _ASK_PASS = "_PDF {} »n الآن ، الرجاء إدخال كلمة المرور: __\n\n/exit __ خروج __ "
 _ASK_PG_ = "Please enter the PDF page syntax that you would like to use,\n\nSyntax:\n\tRange of page: `[start, end]`,\n\tSpecific page: `separated by commas`.\n\nExample: `1,3,5,12:19`"
 _ASK_PG_ERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nPlease enter a valid syntax for the page number,\nsuch as `[start:end]` or `[page_numbers]`."
-_MORE_PGS = "It contains too many pages, send me a pdf fewer than 5 pages 😐"
-_YOUR_ERROR = "You have some big problem..🙂"
-_OWN_RES = "Owner Restricted 😎🤏"
-_ENCRYPT_CAPT = "__Page Number__: {}\n__key__ 🔐: ||{}||"
-_RENAME_CAPT = "old name: `{}`\nnew name: `{}`"
-_COMP_CAPT = "Old File Size: `{}`\nNew File size: `{}`\nRatio: `{}`%"
-_COMPLETED_SUCC = "Completed Successfully. 😎"
-_CANCELED_CB = "🍄 CANCELLED 🍄"
-_TOTAL_PG = "`Total pages: {}..⏳`"
-_CANCEL_AT = "`Canceled at {}/{} pages..` 🙄"
-_UPLOADING_AL = "`Uploading: {}/{} pages.. 🐬`"
-_SIZE_LOAD = "`Due to Overload Bot Only Support %sMb PDFs.."
-_MERGE_DL = "`Downloadeding {}`"
-_START_MERGE = "`started merging {} pdfs`"
-_WATERMARK_TXT = "__Now, Send me a Text Message__\n\n/exit : to cancel"
-_WATERMARK_PDF = "__Send me the watermark pdf.__\n\n/exit : to cancel"
-_WATERMARK_IMG = "__Send me the watermark Image as file__\n__ Supported Files [png, jpeg, jpg]__\n\n/exit : to cancel"
-_ADD_WATERMARK = "Adding Watermark to PDF File 😎"
-_READ_AGAIN = "please read this message again.. 🥴😲"
-_ZIP_CONVERT = "`converted {}/{}` 😎"
-_GENERATING = "`🔗 Generating..`"
-_UNKNOWN_ERROR = "Unfortunately, we encountered an error 😓"
-_NOTIFY = "Get Notify when a someone fetch this pdf"
-_URL_PROCES = "```🔗 Generating..\nWe're working on it!\n\nPlease allow a moment for the processing to complete.```"
-_URL_TYPE = "`🔗 Generating..`\n\n**Public** 📢:\n__The file accessed via this link will be publicly available, allowing anyone to save and forward it__.\n\n**Protect** 🔐:\n__Ensures the confidentiality of the message by preventing its forwarding and saving__."
-_NOTIFY_CB = "🔔 NOTIFY 🔔"
-_MUTE_CB = "🔕 MUTE 🔕"
-_PUBLIC = "📢 PUBLIC 📢"
-_PRIVATE = "🔐 PRIVATE 🔐"
-_GEN_LINK = "**Here it is! This is what you were searching for..**"
-_ERROR_ = "Oops, it looks like something went wrong. Please try again later.\n\n`ERROR:` {}"
-_AIO_PROCESS = "```{} work in progress..🔰\nwait it might take some time.. 💔```"
-_VIEW_ONLY = "The link has restricted view access only.. 👀"
-_REFER_T = "🎁 REFERAL LINK 🎁"
-_REFER_D = "Refer Your Friend.. "
-_CLICK_RIGHT = "Clic Right Side Button to Select. 👉"
-_REFER = "Invited : {} Users.!\nPlease refer a minimum of 5 new users to utilize this bot ☺\n\nYOUR REFERAL LINK : {}"
-_NOW_BETA = "`Now you are a beta user..` ☺"
-_NOW_NOT_BETA = "`Now you are not part in beta test..` 😐"
-_BETA_MSG = "🍄 JOIN BETA [FREE] 🍄"
-_BETA_MESSAGE = "**🔰 Join our Beta Program 🔰**\n__Refer your friends and become a part of the beta version, unlocking exclusive access to effortlessly handle multiple tasks with ease.__\n\n🎀 __Once you Generate your referral link.__\n🎀 __Invite 5 friends to join using this referral link.__\n🎀 __Once you've successfully referred 5 friends, send /beta command.__\n🎀 The 'All-in-One' option will now be available when sending or forwarding a PDF.\n🎀 Enjoy the enhanced capabilities of performing multiple tasks seamlessly in a single process.\n\n**__YOUR REFERAL LINK :__** {}\n**__SHARE LINK__ : [Click Here]({})**"
-_SELECT_SCALE = "🖼 SELECT SCALE 🖼"
-_SELECT_HEAD_FONT = "✒ Select Heading Font ✒"
-_SELECT_PARA_FONT = "🪂 Select Paragraph Font 🪂"
-_SELECT_COLOR = "🎨 Select Color 🎨"
-_USE_DEFAULT = "» Use Default »"
-_SELECT_BG_COLOR = "🎨 Select Background Image 🎨"
+_MORE_PGS = "يحتوي علي عدد كبير جداً من الصفحات ،من فضلك ارسل ملف PDF يحتوي علي اقل من 5 صفحات 😐"
+_YOUR_ERROR = "لديك مشكلة كبيرة ..🙂"
+_OWN_RES = "المالك مقيد 😎🤏"
+_ENCRYPT_CAPT = "__ رقم الصفحة__: {}\n__ مفتاح__ 🔐: || {} ||"
+_RENAME_CAPT = "الاسم القديم: `{}`\n الاسم الجديد: `{}`"
+_COMP_CAPT = "حجم الملف القديم: `{}`\n حجم الملف الجديد: `{}`\n النسبة: `{}`٪"
+_COMPLETED_SUCC = "تم بنجاح. 😎"
+_CANCELED_CB = "🍄 تم الإلغاء 🍄"
+_TOTAL_PG = "`إجمالي الصفحات: {} .. ⏳`"
+_CANCEL_AT = " تم الإلغاء عند {} / {} من الصفحات ..` 🙄"
+_UPLOADING_AL = " تحميل: {} / {} صفحات .. 🐬`"
+_SIZE_LOAD = " بسبب التحميل الزائد ، يدعم فقط٪ sMb PDFs .."
+_MERGE_DL = "`تنزيل {}`"
+_START_MERGE = "`بدأ في الدمج {} pdfs`"
+_WATERMARK_TXT = "__ الآن ، أرسل لي رسالة نصية __\n\n/exit رجوع: "
+_WATERMARK_PDF = "__ أرسل لي العلامة المائية pdf .__\n\n/exit رجوع: "
+_WATERMARK_IMG = "__ أرسل لي صورة العلامة المائية كملف __\n__ الملفات المدعومة [png ، jpeg ، jpg] __\n\n/exit خروج: "
+_ADD_WATERMARK = "إضافة علامة مائية إلى ملف PDF 😎"
+_READ_AGAIN = "الرجاء قراءة هذه الرسالة مرة أخرى .. 🥴😲"
+_ZIP_CONVERT = " تم تحويلة {} / {}`"
+_GENERATING = " 🔗 إنشاء ... "
+_UNKNOWN_ERROR = "للأسف ، واجهنا خطأ 😓"
+_NOTIFY = "احصل على إشعار عندما يقوم شخص ما بإحضار ملف pdf هذا"
+_URL_PROCES = "   🔗 جارٍ الإنشاء ..\n نحن نعمل على ذلك!\n\n يُرجى الانتظار لحظة حتى تكتمل المعالجة.  "
+_URL_TYPE = " 🔗 إنشاء ... \n\n ** عام ** 📢:\n__ سيكون الملف متاحاً للعامه للوصول إليه من هذا الرابط ،مما يجعل اي شخص قادراً علي حفظ واعادة توجيه الملف __.\n\n ** حماية ** 🔐:\n__ ضمانات سرية الرسالة من خلال منع إعادة توجيهها وحفظها _."
+_NOTIFY_CB = "🔔 إشعار 🔔"
+_MUTE_CB = "🔕 كتم الصوت 🔕"
+_PUBLIC = "📢 العامة 📢"
+_PRIVATE = "🔐 خاص 🔐"
+_GEN_LINK = "**ها هو! هذا ما كنت تبحث عنه .. **"
+_ERROR_ = "للأسف ، يبدو أنه حدث خطأ ما. يرجى المحاولة لاحقًا.\n\n` الخطأ: `{}"
+_AIO_PROCESS = "```{} العمل قيد التقدم ..🔰 \n قد يستغرق الأمر بعض الوقت .. 💔```"
+_VIEW_ONLY = "تم تقييد الرابط للعرض فقط .. 👀"
+_REFER_T = "🎁 رابط الإحالة 🎁"
+_REFER_D = "ادعُ صديقك .."
+_CLICK_RIGHT = "انقر فوق زر الجانب الأيمن للتحديد. 👉"
+_REFER = "يرجى إحالة ما لا يقل عن 5 مستخدمين جدد لاستخدام هذا البوت 😑 \n\nYOUR REFERRAL LINK: {}"
+_NOW_BETA = "أنت الآن مستخدم تجريبي .. ☺"
+_NOW_NOT_BETA = "الآن أنت لست جزءًا في الاختبار التجريبي .. 😐"
+_BETA_MSG = "🍄 انضم إلى الإصدار التجريبي [مجانًا] 🍄"
+_BETA_MESSAGE= "🔰 أنضم إلي برنامجنا التجريبي 🔰\nقُم بإحالة أصدقاءك وكن جزءاً من الإصدار التجريبي ، وافتح الوصول الحصري للتعامل مع المهام المتعددة بسهولة.  رابط الإحالة الخاص بك .\n\n🎀 __بمجرد إنشاء رابط الإحاله .\n🎀 أدعُ 5 اصدقاء من خلاله .\n🎀 بعد احالتك 5 اصدقاء ارسل الأمر /beta.\n🎀 اختيار' الكل في واحد ' سيكون متاحا عند ارسال او توجيه ملف PDF .\n🎀 استمتع بالإمكانيات المحسنة لأداء مهام متعدده في عملية واحده بسلاسه ويسر.\n\nرابط الإحالة الخاص بك  : {}\nمشاركة الرابط : [أضغط هنا]({})"
+_SELECT_SCALE = "🖼 تحديد النطاق 🖼"
+_SELECT_HEAD_FONT = "✒ تحديد خط العنوان ✒"
+_SELECT_PARA_FONT = "🪂 تحديد خط الفقرة 🪂"
+_SELECT_COLOR = "🎨 حدد اللون 🎨"
+_USE_DEFAULT = "» استخدام الافتراضي »"
+_SELECT_BG_COLOR = "🎨 حدد صورة الخلفية 🎨"
 _ASK_PG = "Now, please enter the number.\n\n🤠 If you enter an integer, the PDF will be split into parts, each consisting of that number of pages.\n🤠 If you enter a colon (:) followed by a number, the PDF will be split into parts, each consisting of that specified number of pages.\n\n/exit to cancel"
 _ASK_PGERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nError: `{}`"
 _PART_PDF = "🍑 PART PDF 🍑"
