@@ -336,7 +336,7 @@ DOCUMENT = {
     "download" : _START_DOWNL, "refresh" : { _REFRESH : "{}" }, "dlImage" : _DL_IMG, "noAPI" : _NO_API, "error" : _ERROR,
     "takeTime" : _TAKE_TIME, "fromFile" : _CONVERT, "unsupport" : _UNSUPPORT, "cancelCB" : { _CANCEL : "close|me" }, "generate" : { _GENERATE : "generate" },
     "generateRN" : { _GENERATE : "generate", _RENAME : "generateREN" }, "setHdImg" : _HD, "setDefault" : { _BACK_DEFAULT : "close|hd" }, "useDOCKER" : _NOT_DOKR,
-    "bigCB" : { _BIG_SUPP : "https://github.com/nabilanavab/ilovepdf" }, "imageAdded" : _IMG_ADDED}
+    "bigCB" : { _BIG_SUPP : "https://telegramic.org/bot/i2pdfbot/" }, "imageAdded" : _IMG_ADDED}
 AIO = {
     "true" : _TRUE, "false" : _FALSE, "aio" : _PASS_REQUIRED, "waitPASS" : _WAIT_TXT, "passMSG" : _AIO_QN,
     "aio_button" : {_HELP :"nabilanavab|aioInput", _YES:"aioInput|enc", _NO :"aioInput|dec", _MOVE :"aioInput|dec" },
