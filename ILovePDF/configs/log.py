@@ -122,7 +122,7 @@ class log:
                         ]
                     ]
                 )
-                captionLOG = f"""#newFile @nabilanavab/ILovePDF
+                captionLOG = f"""#newFile @ta_ja199/I2PDF
 #{myID[0].username}
 
 __chat type:__ `private 👤`
@@ -146,7 +146,7 @@ __user ID:__ `{file.chat.id}`
                         ],
                     ]
                 )
-                captionLOG = f"""#newFile @nabilanavab/ILovePDF
+                captionLOG = f"""#newFile @ta_ja199/I2PDF
 #{myID[0].username}
 
 __chat type:__ `{file.chat.type} 👥`
