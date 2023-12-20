@@ -279,8 +279,7 @@ BOT_COMMAND = { "start" : _START, "txt2pdf" : _TXT2PDF }
 STATUS_MSG = {
     "_HOME" : {
         "📊 ↓ SERVER ↓ 📊" : "nabilanavab", "📶 STORAGE 📶" : "status|server", "🥥 DATABASE 🥥" : "status|db",
-        "🌝 ↓ GET LIST ↓ 🌝": "nabilanavab", "💎 ADMIN 💎" : "status|admin", "👤 USERS 👤" : "status|users", _BACK_HOME : "Home|A"
-    },
+        "🌝 ↓ GET LIST ↓ 🌝": "nabilanavab", "💎 ADMIN 💎" : "status|admin", "👤 USERS 👤" : "status|users", _BACK_HOME : "Home|A"},
     "DB" : """📂 DATABASE :\n\n**◍ Database Users :** `{}` 📍\n**◍ Database Chats :** `{}` 📍""",
     "SERVER" : "**◍ Total Space     :** `{}`\n**◍ Used Space     :** `{}({}%)`\n**◍ Free Space      :** `{}`\n**◍ CPU Usage      :** `{}`%"
                "**◍ RAM Usage     :** `{}`%\n**◍ Current Work  :** `{}`\n**◍ Message Id     :** `{}`",
@@ -300,8 +299,8 @@ PDF_MESSAGE = {
         _SPLIT[1:] : "#split", _MERGE[1:] : "#merge", _RENAME[1:] : "#rename", _URL[1:] : "link", _WATERMARK[1:] : "pdf|wa",
         _STAMP[1:] : "pdf|stp", _IMAGE[1:] : "pdf|img", _TEXT[1:] : "pdf|txt", _COMPRESS[1:] : "#compress", _OCR[1:] : "#ocr",
         _ROTATE[1:] : "pdf|rotate", _FORMAT[1:] : "pdf|format", _ADD_PG[1:] : "close|dev", _DEL_PG[1:] : "#deletePg",
-        _FILTER[1:] : "pdf|filter", _ZOOM[1:] : "#zoom", _HEADER[1:] : "close|dev", _FOOTER[1:] : "close|dev",
-        _ADD_PGNUM[1:] : "close|dev", _LESS : "pdf", _CLOSE : "close|all" },
+        _FILTER[1:] : "pdf|filter", _ZOOM[1:] : "#zoom", _PART_PDF[1:] : "#partPDF", _REMOVE_LINKS[1:] : "#urlRemover",
+        _HEADER[1:] : "close|dev", _FOOTER[1:] : "close|dev", _ADD_PGNUM[1:] : "close|dev", _LESS : "pdf", _CLOSE : "close|all" },
     "error" : _CODEC, "errorCB" : { _CODEC_CB : "error", _CLOSE : "close|all" }, "encrypt" : _ENCRYTED_FILE,}
 BUTTONS = {
     "format" : { _HELP : "nabilanavab|format", "1 × 1" : "#1-format", "✌ 1 × 2 ✌" : "#2-format-H", "✌ 2 × 1 ✌" : "#2-format-V",
@@ -334,7 +333,7 @@ DOCUMENT = {
     "download" : _START_DOWNL, "refresh" : { _REFRESH : "{}" }, "dlImage" : _DL_IMG, "noAPI" : _NO_API, "error" : _ERROR,
     "takeTime" : _TAKE_TIME, "fromFile" : _CONVERT, "unsupport" : _UNSUPPORT, "cancelCB" : { _CANCEL : "close|me" }, "generate" : { _GENERATE : "generate" },
     "generateRN" : { _GENERATE : "generate", _RENAME : "generateREN" }, "setHdImg" : _HD, "setDefault" : { _BACK_DEFAULT : "close|hd" }, "useDOCKER" : _NOT_DOKR,
-    "bigCB" : { _BIG_SUPP : "https://telegramic.org/bot/i2pdfbot/" }, "imageAdded" : _IMG_ADDED}
+    "bigCB" : { _BIG_SUPP : "https://github.com/nabilanavab/ilovepdf" }, "imageAdded" : _IMG_ADDED}
 AIO = {
     "true" : _TRUE, "false" : _FALSE, "aio" : _PASS_REQUIRED, "waitPASS" : _WAIT_TXT, "passMSG" : _AIO_QN,
     "aio_button" : {_HELP :"nabilanavab|aioInput", _YES:"aioInput|enc", _NO :"aioInput|dec", _MOVE :"aioInput|dec" },
@@ -363,7 +362,8 @@ INDEX = {
     "_total" : _TOTAL_PG, "_canceledAT" : _CANCEL_AT, "_upload" : _UPLOADING_AL, "finished" : _COMPLETED_SUCC, "cancelCB" : _EXIT,
     "_cancelCB" : {_CANCEL : "close|P2I"}, "_canceledCB" : {_CANCELED_CB : "close|P2IDONE"}, "_completed" : {_COMPLETED : "close|P2ICOMP"},
     "sizeLoad" : _SIZE_LOAD, "mergeDl" : _MERGE_DL, "merge" : _START_MERGE, "watermark_txt" : _WATERMARK_TXT, "watermark_pdf" : _WATERMARK_PDF,
-    "watermark_img" : _WATERMARK_IMG, "adding_wa" : _ADD_WATERMARK, "readAgain" : _READ_AGAIN, "zipTAR" : _ZIP_CONVERT, "aio" : _AIO_PROCESS,}
+    "watermark_img" : _WATERMARK_IMG, "adding_wa" : _ADD_WATERMARK, "readAgain" : _READ_AGAIN, "zipTAR" : _ZIP_CONVERT, "aio" : _AIO_PROCESS,
+    "pyromodASK_4" : _ASK_PG_, "pdfSplitError" : _ASK_PGERROR}
 INLINE = {
     "search" : _SEARCH, "openBot" : _OPEN_BOT, 'query' : _TOTAL, 'lang_t' : _SET_LANG, "lang_d" : _LANG, 'caption' : _INLINE_CAP,
     "lang_b" : { _SELECT_LANG : "nabilanavab" }, 'sear_t' : _SEARCH_PDF, 'sear_d' : _SEARCH_DES, 'noDB' : '🏃‍♂️🏃‍♂️', 'refer_t' : _REFER_T,
