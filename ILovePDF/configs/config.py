@@ -81,7 +81,7 @@ class settings(object):
 
     DEFAULT_CAPT = os.environ.get("DEFAULT_CAPTION", False)
 
-    DEFAULT_LANG = os.environ.get("DEFAULT_LANG", "eng")  # use small letters
+    DEFAULT_LANG = os.environ.get("DEFAULT_LANG", "arb")  # use small letters
 
     MULTI_LANG_SUP = (
         True if os.environ.get("MULTI_LANG_SUP", "True") == "True" else True
