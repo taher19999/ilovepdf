@@ -1,4 +1,4 @@
-# This module is part of https://github.com/nabilanavab/ilovepdf
+# This module is part of https://telegramic.org/bot/i2pdfbot/
 # Feel free to use and contribute to this project. Your contributions are welcome!
 # copyright ©️ 2021 nabilanavab
 
@@ -64,10 +64,10 @@ async def default_ans(inline_query) -> list:
             ),
             InlineQueryResultArticle(
                 thumb_url="https://i.imgur.com/ylUGuxH.png",
-                title="🌟SOURCE CODE 🌟",
-                description="About Source Code..",
+                title="🌟rate bot 🌟",
+                description="About bot..",
                 input_message_content=InputTextMessageContent(
-                    f"https://github.com/nabilanavab/ilovepdf",
+                    f"https://telegramic.org/bot/i2pdfbot/",
                     disable_web_page_preview=True,
                 ),
             ),
