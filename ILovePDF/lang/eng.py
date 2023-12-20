@@ -197,8 +197,8 @@ _CANT_COMP = "غير قادر على ضغط أكثر 🙂"
 _ASK_NAME = "أدخل اسمًا جديدًا لـ PDF:\n\n/exit خروج "
 _ASK_MERGE = "__MERGE pdfs »إجمالي ملفات PDF في قائمة الانتظار: {}\n\n /exit الخروج \n/merge الدمج "
 _ASK_PASS = "_PDF {} »n الآن ، الرجاء إدخال كلمة المرور: __\n\n/exit __ خروج __ "
-_ASK_PG_ = "Please enter the PDF page syntax that you would like to use,\n\nSyntax:\n\tRange of page: `[start, end]`,\n\tSpecific page: `separated by commas`.\n\nExample: `1,3,5,12:19`"
-_ASK_PG_ERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nPlease enter a valid syntax for the page number,\nsuch as `[start:end]` or `[page_numbers]`."
+_ASK_PG_ = "من فضلك ادخل الصفحات التي تريدها,\n\nSyntax(تركيب الجملة):\n\tنطاق الصفحات: `[بداية, نهاية]`,\n\tصفحة محددة: `مفصولة بفواصل`.\n\nمثال: `1,3,5,12:19`"
+_ASK_PG_ERROR = "`بناء جملة غير صالح لرقم الصفحة`\n`NB: Pdf only have {} pages` ⭐.\n\nالرجاء إدخال بناء جملة صالح لرقم الصفحة,\nمثل `[بداية:نهاية]` او  `[page_numbers]`."
 _MORE_PGS = "يحتوي علي عدد كبير جداً من الصفحات ،من فضلك ارسل ملف PDF يحتوي علي اقل من 5 صفحات 😐"
 _YOUR_ERROR = "لديك مشكلة كبيرة ..🙂"
 _OWN_RES = "المالك مقيد 😎🤏"
@@ -246,10 +246,10 @@ _SELECT_PARA_FONT = "🪂 تحديد خط الفقرة 🪂"
 _SELECT_COLOR = "🎨 حدد اللون 🎨"
 _USE_DEFAULT = "» استخدام الافتراضي »"
 _SELECT_BG_COLOR = "🎨 حدد صورة الخلفية 🎨"
-_ASK_PG = "Now, please enter the number.\n\n🤠 If you enter an integer, the PDF will be split into parts, each consisting of that number of pages.\n🤠 If you enter a colon (:) followed by a number, the PDF will be split into parts, each consisting of that specified number of pages.\n\n/exit to cancel"
-_ASK_PGERROR = "`Invalid syntax for page number`\n`NB: Pdf only have {} pages` ⭐.\n\nError: `{}`"
-_PART_PDF = "🍑 PART PDF 🍑"
-_REMOVE_LINKS = "🔏 REMOVE LINKS 🔏"
+_ASK_PG = "الآن، يرجى إدخال الرقم.\n\n🤠 إذا قمت بإدخال عدد صحيح، فسيتم تقسيم ملف PDF إلى أجزاء، يتكون كل منها من هذا العدد من الصفحات.\n🤠 إذا قمت بإدخال نقطتين (:) متبوعة برقم، فسيتم تقسيم ملف PDF إلى أجزاء، يتكون كل منها من هذا العدد المحدد من الصفحات.\n\n/exit للالغاء"
+_ASK_PGERROR = "`بناء جملة غير صالح لرقم الصفحة`\n`NB: Pdf only have {} pages` ⭐.\n\nError: `{}`"
+_PART_PDF = "🍑 جزء PDF 🍑"
+_REMOVE_LINKS = "🔏 إزالة الروابط 🔏"
 
 
 
@@ -260,7 +260,7 @@ HOME = {
     "HomeACB" : { _SETTINGS : "Home|B", _LANGUAGE : "set|lang", _HELP : "Home|C", _CHANNEL : f"{str(settings.OWNED_CHANNEL)}",
                  _SOURCE : f"{str(settings.SOURCE_CODE)}", _ADD_GROUP : "https://t.me/{}?startgroup=True" },
     "HomeAdminCB" : { _SETTINGS : "Home|B", _LANGUAGE : "set|lang", _HELP : "Home|C",
-        "🗽 STATUS 🗽" : f"status|home", _ADD_GROUP : "https://t.me/{}?startgroup=True", _CLOSE : "close|mee" },
+        "🗽 الحالة 🗽" : f"status|home", _ADD_GROUP : "https://t.me/{}?startgroup=True", _CLOSE : "close|mee" },
     "HomeBCB" : { _THUMB : "set|thumb", _NAME : "set|fname", _API : "set|api", _CAPTION : "set|capt", _BACK_HOME : "Home|B2A" },
     "HomeCCB" : { _BACK_HOME : "Home|A", _INSTRUCTIONS : "Home|D" }, "HomeDCB" : { _HELP : "Home|C", _BACK_HOME : "Home|A" } }
 HomeG = { "HomeACB" : { _LANGUAGE : "set|lang", _HELP : "Home|C", _CHANNEL : f"{str(settings.OWNED_CHANNEL)}",
@@ -322,12 +322,12 @@ BUTTONS = {
     "color" : { _WATER_COLOR : "nabilanavab", "᠎᠎᠎⚪️" : "#wa|{0}|{1}|{2}|W", "᠎⚫️" : "#wa|{0}|{1}|{2}|B", "᠎᠎🟤" : "#wa|{0}|{1}|{2}|C",
         "᠎🔴" : "#wa|{0}|{1}|{2}|R", "᠎᠎🟢" : "#wa|{0}|{1}|{2}|G", "🔵" : "#wa|{0}|{1}|{2}|N", "᠎᠎🟡" : "#wa|{0}|{1}|{2}|Y",
         "᠎᠎🟠" : "#wa|{0}|{1}|{2}|O", "🟣" : "#wa|{0}|{1}|{2}|V", _BACK : "pdf|wa|{0}|{1}" },
-    "stamp" : { _B_STAMP : "nabilanavab", "Not For Public Release 🤧" : "pdf|stp|10", "For Public Release 🥱" : "pdf|stp|8",
-        "Confidential 🤫" : "pdf|stp|2", "Departmental 🤝" : "pdf|stp|3", "Experimental 🔬" : "pdf|stp|4", "Expired 🐀" : "pdf|stp|5",
+    "stamp" : { _B_STAMP : "nabilanavab", "ليس للنشر العام 🤧" : "pdf|stp|10", "للنشر العام 🥱" : "pdf|stp|8",
+        "مؤتمن 🤫" : "pdf|stp|2", "الإدارات 🤝" : "pdf|stp|3", "تجريبي 🔬" : "pdf|stp|4", "Expired 🐀" : "pdf|stp|5",
         "Final 🔧" : "pdf|stp|6", "For Comment 🗯️" : "pdf|stp|7", "Not Approved 😒" : "pdf|stp|9", "Approved 🥳" : "pdf|stp|0",
         "Sold ✊" : "pdf|stp|11", "Top Secret 😷" : "pdf|stp|12", "Draft 👀" : "pdf|stp|13", "AsIs 🤏" : "pdf|stp|1", _BACK : "pdf"},
-    "stampA" : { _STAMP_COLOR : "nabilanavab", "Red ❤️" : "#spP|{}|r", "Blue 💙" : "#spP|{}|b", "Green 💚" : "#spP|{}|g", "Yellow 💛" : "#spP|{}|c1",
-        "Pink 💜" : "#spP|{}|c2", "Hue 💚" : "#spP|{}|c3", "White 🤍" : "#spP|{}|c4", "Black 🖤" : "#spP|{}|c5", _BACK : "pdf|stp" }}
+    "stampA" : { _STAMP_COLOR : "nabilanavab", "احمر ❤️" : "#spP|{}|r", "ازرق 💙" : "#spP|{}|b", "اخضر 💚" : "#spP|{}|g", "اصفر 💛" : "#spP|{}|c1",
+        "وردي 💜" : "#spP|{}|c2", "فاتح 💚" : "#spP|{}|c3", "ابيض 🤍" : "#spP|{}|c4", "اسود 🖤" : "#spP|{}|c5", _BACK : "pdf|stp" }}
 PROGRESS = {"progress" : _PROGRESS , "upFileCB" : {f"📤 .. {_UPLOADING} .. 📤" : "nabilanavab"}, "cbPRO_D" : ["📤 {:.2f}% 📤", _CANCEL], "cbPRO_U" : ["📤 {:.2f}% 📤", _CANCEL]}
 GENERATE = {"noQueue" : _NO_QUEUE, "noImages" : _NO_IMG, "currDL" : _DL_IMG, "geting" : _GEN_PDF, "getFileNm" : _REN_PDF, "deleteQueue" : _DLT_QUEUE, "getingCB" : {_GEN_CB : "nabilanavab"},}
 DOCUMENT = {
@@ -336,7 +336,7 @@ DOCUMENT = {
     "download" : _START_DOWNL, "refresh" : { _REFRESH : "{}" }, "dlImage" : _DL_IMG, "noAPI" : _NO_API, "error" : _ERROR,
     "takeTime" : _TAKE_TIME, "fromFile" : _CONVERT, "unsupport" : _UNSUPPORT, "cancelCB" : { _CANCEL : "close|me" }, "generate" : { _GENERATE : "generate" },
     "generateRN" : { _GENERATE : "generate", _RENAME : "generateREN" }, "setHdImg" : _HD, "setDefault" : { _BACK_DEFAULT : "close|hd" }, "useDOCKER" : _NOT_DOKR,
-    "bigCB" : { _BIG_SUPP : "https://github.com/nabilanavab/ilovepdf" }, "imageAdded" : _IMG_ADDED}
+    "bigCB" : { _BIG_SUPP : "https://t.me/i2pdfbotchannel" }, "imageAdded" : _IMG_ADDED}
 AIO = {
     "true" : _TRUE, "false" : _FALSE, "aio" : _PASS_REQUIRED, "waitPASS" : _WAIT_TXT, "passMSG" : _AIO_QN,
     "aio_button" : {_HELP :"nabilanavab|aioInput", _YES:"aioInput|enc", _NO :"aioInput|dec", _MOVE :"aioInput|dec" },
