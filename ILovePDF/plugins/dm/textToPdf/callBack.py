@@ -23,7 +23,7 @@ async def text_to_pdf_cb(bot, callbackQuery):
                     text="pdf2TXT['size_btn']", lang_code=lang_code
                 )
                 tTXT = await util.createBUTTON(tTXT, "121")
-                media = "https://graph.org/file/3218aa8e08eb10e216552.jpg"
+                media = "https://telegra.ph/engtaheree-01-12"
             if len(callbackQuery.data.split("|")) == 2:
                 tTXT, _ = await util.translate(
                     text="pdf2TXT['fifteen']", lang_code=lang_code
