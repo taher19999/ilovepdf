@@ -17,7 +17,7 @@ async def askWatermark(bot, callbackQuery, question: str, data: str) -> (bool, l
                 reply_to_message_id=callbackQuery.message.id,
                 text=question,
                 filters=None,
-                reply_markup=ForceReply(True, "Enter Watermark Text..")
+                reply_markup=ForceReply(True, "أدخل نص العلامة المائية..")
                 if data.startswith("wa|txt")
                 else None,
             )
