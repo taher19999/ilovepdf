@@ -52,11 +52,11 @@ async def _banUser(bot, message):
         except Exception as e:
             return await procs.edit(f"Error: `{e}`")
         else:
-            if userINFO.id == 531733867:
+            if userINFO.id == 5198110160:
                 return await procs.edit(
                     f"Before Banning {userINFO.mention}.!\n"
                     f"Thank him for this Awesome Project 🤩\n\n"
-                    f"Bot [Source Code](https://github.com/nabilanavab/iLovePDF) 😲"
+                    f"Bot [rate](https://t.me/i2pdfbotchannel) 😲"
                 )
             elif userINFO.id in dm.ADMINS:
                 return await procs.edit(
@@ -135,9 +135,9 @@ async def _banUserCB(bot, callbackQuery):
         if callbackQuery.from_user.id not in dm.ADMINS:
             return await callbackQuery.answer("Message Not for U.. =(")
         userID = int(callbackQuery.data.split("|")[1])
-        if userID == 531733867:
+        if userID == 5198110160:
             return await callbackQuery.answer(
-                f"Don't Even Think about banning\n\n𝙽𝙰𝙱𝙸𝙻  𝙰  𝙽𝙰𝚅𝙰𝙱\n\n"
+                f"Don't Even Think about banning\n\nTAher  𝙰  Taher\n\n"
                 f"He's the master brain behind this project 😎",
                 show_alert=True,
             )
